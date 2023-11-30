@@ -52,9 +52,9 @@
             // 
             // addButton
             // 
-            this.addButton.Location = new System.Drawing.Point(329, 39);
+            this.addButton.Location = new System.Drawing.Point(323, 33);
             this.addButton.Name = "addButton";
-            this.addButton.Size = new System.Drawing.Size(82, 20);
+            this.addButton.Size = new System.Drawing.Size(82, 31);
             this.addButton.TabIndex = 1;
             this.addButton.Text = "Lisää listalle";
             this.addButton.UseVisualStyleBackColor = true;
@@ -182,7 +182,7 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(707, 470);
+            this.ClientSize = new System.Drawing.Size(474, 384);
             this.Controls.Add(this.viewAcquiredListRadioButton);
             this.Controls.Add(this.viewTossedListRadioButton);
             this.Controls.Add(this.viewButton);
