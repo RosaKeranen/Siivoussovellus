@@ -66,6 +66,9 @@
     <Compile Include="TossedForm.Designer.cs">
       <DependentUpon>TossedForm.cs</DependentUpon>
     </Compile>
+    <EmbeddedResource Include="AcquiredForm.resx">
+      <DependentUpon>AcquiredForm.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="MainForm.resx">
       <DependentUpon>MainForm.cs</DependentUpon>
     </EmbeddedResource>
@@ -78,6 +81,9 @@
       <AutoGen>True</AutoGen>
       <DependentUpon>Resources.resx</DependentUpon>
     </Compile>
+    <EmbeddedResource Include="TossedForm.resx">
+      <DependentUpon>TossedForm.cs</DependentUpon>
+    </EmbeddedResource>
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
       <LastGenOutput>Settings.Designer.cs</LastGenOutput>
