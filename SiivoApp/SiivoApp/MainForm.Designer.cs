@@ -197,7 +197,7 @@
             this.Controls.Add(this.addButton);
             this.Controls.Add(this.textBox1);
             this.Name = "Form1";
-            this.Text = "Form1";
+            this.Text = "Siivoussovellus";
             this.ResumeLayout(false);
             this.PerformLayout();
 
