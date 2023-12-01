@@ -35,6 +35,9 @@
             this.tossedViewLabel = new System.Windows.Forms.Label();
             this.charityLabel = new System.Windows.Forms.Label();
             this.soldLabel = new System.Windows.Forms.Label();
+            this.thrownAwayCountLabel = new System.Windows.Forms.Label();
+            this.charityCountLabel = new System.Windows.Forms.Label();
+            this.soldCountLabel = new System.Windows.Forms.Label();
             this.SuspendLayout();
             // 
             // thrownAwayListBox
@@ -97,11 +100,41 @@
             this.soldLabel.TabIndex = 6;
             this.soldLabel.Text = "Myyty";
             // 
+            // thrownAwayCountLabel
+            // 
+            this.thrownAwayCountLabel.AutoSize = true;
+            this.thrownAwayCountLabel.Location = new System.Drawing.Point(46, 373);
+            this.thrownAwayCountLabel.Name = "thrownAwayCountLabel";
+            this.thrownAwayCountLabel.Size = new System.Drawing.Size(145, 13);
+            this.thrownAwayCountLabel.TabIndex = 7;
+            this.thrownAwayCountLabel.Text = "Roskiin heitettyjen lukumäärä";
+            // 
+            // charityCountLabel
+            // 
+            this.charityCountLabel.AutoSize = true;
+            this.charityCountLabel.Location = new System.Drawing.Point(268, 373);
+            this.charityCountLabel.Name = "charityCountLabel";
+            this.charityCountLabel.Size = new System.Drawing.Size(132, 13);
+            this.charityCountLabel.TabIndex = 8;
+            this.charityCountLabel.Text = "Pois annettujen lukumäärä";
+            // 
+            // soldCountLabel
+            // 
+            this.soldCountLabel.AutoSize = true;
+            this.soldCountLabel.Location = new System.Drawing.Point(488, 373);
+            this.soldCountLabel.Name = "soldCountLabel";
+            this.soldCountLabel.Size = new System.Drawing.Size(100, 13);
+            this.soldCountLabel.TabIndex = 9;
+            this.soldCountLabel.Text = "Myytyjen lukumäärä";
+            // 
             // TossedForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(800, 450);
+            this.Controls.Add(this.soldCountLabel);
+            this.Controls.Add(this.charityCountLabel);
+            this.Controls.Add(this.thrownAwayCountLabel);
             this.Controls.Add(this.soldLabel);
             this.Controls.Add(this.charityLabel);
             this.Controls.Add(this.tossedViewLabel);
@@ -125,5 +158,8 @@
         private System.Windows.Forms.Label tossedViewLabel;
         private System.Windows.Forms.Label charityLabel;
         private System.Windows.Forms.Label soldLabel;
+        private System.Windows.Forms.Label thrownAwayCountLabel;
+        private System.Windows.Forms.Label charityCountLabel;
+        private System.Windows.Forms.Label soldCountLabel;
     }
 }

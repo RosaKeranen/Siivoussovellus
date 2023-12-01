@@ -35,6 +35,9 @@
             this.newPurchaseLabel = new System.Windows.Forms.Label();
             this.freeLabel = new System.Windows.Forms.Label();
             this.secondhandLabel = new System.Windows.Forms.Label();
+            this.newPurchaseCountLabel = new System.Windows.Forms.Label();
+            this.freeCountLabel = new System.Windows.Forms.Label();
+            this.secondhandCountLabel = new System.Windows.Forms.Label();
             this.SuspendLayout();
             // 
             // newPurchaseListBox
@@ -97,11 +100,41 @@
             this.secondhandLabel.TabIndex = 6;
             this.secondhandLabel.Text = "Ostettu käytettynä";
             // 
+            // newPurchaseCountLabel
+            // 
+            this.newPurchaseCountLabel.AutoSize = true;
+            this.newPurchaseCountLabel.Location = new System.Drawing.Point(45, 376);
+            this.newPurchaseCountLabel.Name = "newPurchaseCountLabel";
+            this.newPurchaseCountLabel.Size = new System.Drawing.Size(143, 13);
+            this.newPurchaseCountLabel.TabIndex = 7;
+            this.newPurchaseCountLabel.Text = "Uutena ostettujen lukumäärä";
+            // 
+            // freeCountLabel
+            // 
+            this.freeCountLabel.AutoSize = true;
+            this.freeCountLabel.Location = new System.Drawing.Point(274, 376);
+            this.freeCountLabel.Name = "freeCountLabel";
+            this.freeCountLabel.Size = new System.Drawing.Size(147, 13);
+            this.freeCountLabel.TabIndex = 8;
+            this.freeCountLabel.Text = "Ilmaiseksi saatujen lukumäärä";
+            // 
+            // secondhandCountLabel
+            // 
+            this.secondhandCountLabel.AutoSize = true;
+            this.secondhandCountLabel.Location = new System.Drawing.Point(493, 376);
+            this.secondhandCountLabel.Name = "secondhandCountLabel";
+            this.secondhandCountLabel.Size = new System.Drawing.Size(158, 13);
+            this.secondhandCountLabel.TabIndex = 9;
+            this.secondhandCountLabel.Text = "Käytettynä ostettujen lukumäärä";
+            // 
             // AcquiredForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(800, 450);
+            this.Controls.Add(this.secondhandCountLabel);
+            this.Controls.Add(this.freeCountLabel);
+            this.Controls.Add(this.newPurchaseCountLabel);
             this.Controls.Add(this.secondhandLabel);
             this.Controls.Add(this.freeLabel);
             this.Controls.Add(this.newPurchaseLabel);
@@ -125,5 +158,8 @@
         private System.Windows.Forms.Label newPurchaseLabel;
         private System.Windows.Forms.Label freeLabel;
         private System.Windows.Forms.Label secondhandLabel;
+        private System.Windows.Forms.Label newPurchaseCountLabel;
+        private System.Windows.Forms.Label freeCountLabel;
+        private System.Windows.Forms.Label secondhandCountLabel;
     }
 }
