@@ -52,6 +52,8 @@
     <Compile Include="AcquiredForm.Designer.cs">
       <DependentUpon>AcquiredForm.cs</DependentUpon>
     </Compile>
+    <Compile Include="DTO\ItemListRow.cs" />
+    <Compile Include="Helpers\FileHelper.cs" />
     <Compile Include="MainForm.cs">
       <SubType>Form</SubType>
     </Compile>
