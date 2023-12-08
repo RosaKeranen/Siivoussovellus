@@ -13,5 +13,10 @@ namespace SiivoApp.DTO
         public DateTime Timestamp { get; set; }
 
         public ItemListRow() { }
+
+        public ItemListRow(string Text) {
+            this.Text = Text;
+            Timestamp = DateTime.Now;
+        }
     }
 }

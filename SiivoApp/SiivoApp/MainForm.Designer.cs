@@ -207,6 +207,7 @@
             this.tossedTypeGroupBox.TabIndex = 13;
             this.tossedTypeGroupBox.TabStop = false;
             this.tossedTypeGroupBox.Text = "Mihin nakkasit?";
+            this.tossedTypeGroupBox.Enter += new System.EventHandler(this.tossedTypeGroupBox_Enter);
             // 
             // acquiredTypeGroupBox
             // 
@@ -219,6 +220,7 @@
             this.acquiredTypeGroupBox.TabIndex = 14;
             this.acquiredTypeGroupBox.TabStop = false;
             this.acquiredTypeGroupBox.Text = "Miten hankit?";
+            this.acquiredTypeGroupBox.Enter += new System.EventHandler(this.acquiredTypeGroupBox_Enter);
             // 
             // chooseViewGroupBox
             // 

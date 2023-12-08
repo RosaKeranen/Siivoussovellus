@@ -1,4 +1,6 @@
-﻿using System;
+﻿using SiivoApp.DTO;
+using SiivoApp.Helpers;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
@@ -25,12 +27,20 @@ namespace SiivoApp
 
         private void tossedRadioButton_CheckedChanged(object sender, EventArgs e)
         {
-
+            if (tossedRadioButton.Checked)
+            {
+                tossedTypeGroupBox.Enabled = true;
+                acquiredTypeGroupBox.Enabled = false;
+            }
         }
 
         private void acquiredRadioButton_CheckedChanged(object sender, EventArgs e)
         {
-
+            if (acquiredRadioButton.Checked)
+            {
+                acquiredTypeGroupBox.Enabled = true;
+                tossedTypeGroupBox.Enabled = false;
+            }
         }
 
         private void thrownAwayRadioButton_CheckedChanged(object sender, EventArgs e)
@@ -65,7 +75,13 @@ namespace SiivoApp
 
         private void addButton_Click(object sender, EventArgs e)
         {
+            var x = new FileHelper();
 
+            var y = new List<ItemListRow>();
+            y.Add(new ItemListRow("roska1"));
+            y.Add(new ItemListRow("roska2"));
+
+            x.WriteToFile("lista1.json", y);
         }
 
         private void viewAcquiredListRadioButton_CheckedChanged(object sender, EventArgs e)
@@ -100,5 +116,14 @@ namespace SiivoApp
             }
         }
 
+        private void tossedTypeGroupBox_Enter(object sender, EventArgs e)
+        {
+         
+        }
+
+        private void acquiredTypeGroupBox_Enter(object sender, EventArgs e)
+        {
+            Enabled = false;
+        }
     }
 }
