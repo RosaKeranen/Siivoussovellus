@@ -18,6 +18,9 @@ namespace SiivoApp
         public MainForm()
         {
             InitializeComponent();
+
+            tossedTypeGroupBox.Enabled = false;
+            acquiredTypeGroupBox.Enabled = false;
         }
 
         private void MainForm_Load(object sender, EventArgs e)
@@ -123,7 +126,12 @@ namespace SiivoApp
 
         private void acquiredTypeGroupBox_Enter(object sender, EventArgs e)
         {
-            Enabled = false;
+        
+        }
+
+        private void textBox1_TextChanged(object sender, EventArgs e)
+        {
+
         }
     }
 }
