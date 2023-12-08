@@ -15,6 +15,7 @@ namespace SiivoApp
 {
     public partial class MainForm : Form
     {
+
         public MainForm()
         {
             InitializeComponent();
@@ -32,6 +33,9 @@ namespace SiivoApp
         {
             if (tossedRadioButton.Checked)
             {
+                newPurchaseRadioButton.Checked = false;
+                freeRadioButton.Checked = false;
+                secondhandPurchaseRadioButton.Checked = false;
                 tossedTypeGroupBox.Enabled = true;
                 acquiredTypeGroupBox.Enabled = false;
             }
@@ -41,6 +45,9 @@ namespace SiivoApp
         {
             if (acquiredRadioButton.Checked)
             {
+                tossedRadioButton.Checked = false;
+                charityRadioButton.Checked = false;
+                soldRadioButton.Checked = false;
                 acquiredTypeGroupBox.Enabled = true;
                 tossedTypeGroupBox.Enabled = false;
             }
@@ -126,7 +133,7 @@ namespace SiivoApp
 
         private void acquiredTypeGroupBox_Enter(object sender, EventArgs e)
         {
-        
+
         }
 
         private void textBox1_TextChanged(object sender, EventArgs e)
