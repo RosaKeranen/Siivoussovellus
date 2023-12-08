@@ -64,6 +64,7 @@
             this.addButton.TabIndex = 1;
             this.addButton.Text = "Lisää listalle";
             this.addButton.UseVisualStyleBackColor = true;
+            this.addButton.Click += new System.EventHandler(this.addButton_Click);
             // 
             // tossedRadioButton
             // 
@@ -75,6 +76,7 @@
             this.tossedRadioButton.TabStop = true;
             this.tossedRadioButton.Text = "Siivottu";
             this.tossedRadioButton.UseVisualStyleBackColor = true;
+            this.tossedRadioButton.CheckedChanged += new System.EventHandler(this.tossedRadioButton_CheckedChanged);
             // 
             // acquiredRadioButton
             // 
@@ -86,6 +88,7 @@
             this.acquiredRadioButton.TabStop = true;
             this.acquiredRadioButton.Text = "Hankittu";
             this.acquiredRadioButton.UseVisualStyleBackColor = true;
+            this.acquiredRadioButton.CheckedChanged += new System.EventHandler(this.acquiredRadioButton_CheckedChanged);
             // 
             // thrownAwayRadioButton
             // 
@@ -97,6 +100,7 @@
             this.thrownAwayRadioButton.TabStop = true;
             this.thrownAwayRadioButton.Text = "Heitetty roskiin";
             this.thrownAwayRadioButton.UseVisualStyleBackColor = true;
+            this.thrownAwayRadioButton.CheckedChanged += new System.EventHandler(this.thrownAwayRadioButton_CheckedChanged);
             // 
             // charityRadioButton
             // 
@@ -108,6 +112,7 @@
             this.charityRadioButton.TabStop = true;
             this.charityRadioButton.Text = "Annettu pois";
             this.charityRadioButton.UseVisualStyleBackColor = true;
+            this.charityRadioButton.CheckedChanged += new System.EventHandler(this.charityRadioButton_CheckedChanged);
             // 
             // soldRadioButton
             // 
@@ -119,6 +124,7 @@
             this.soldRadioButton.TabStop = true;
             this.soldRadioButton.Text = "Myyty";
             this.soldRadioButton.UseVisualStyleBackColor = true;
+            this.soldRadioButton.CheckedChanged += new System.EventHandler(this.soldRadioButton_CheckedChanged);
             // 
             // newPurchaseRadioButton
             // 
@@ -130,6 +136,7 @@
             this.newPurchaseRadioButton.TabStop = true;
             this.newPurchaseRadioButton.Text = "Ostettu uutena";
             this.newPurchaseRadioButton.UseVisualStyleBackColor = true;
+            this.newPurchaseRadioButton.CheckedChanged += new System.EventHandler(this.newPurchaseRadioButton_CheckedChanged);
             // 
             // freeRadioButton
             // 
@@ -141,6 +148,7 @@
             this.freeRadioButton.TabStop = true;
             this.freeRadioButton.Text = "Saatu ilmaiseksi";
             this.freeRadioButton.UseVisualStyleBackColor = true;
+            this.freeRadioButton.CheckedChanged += new System.EventHandler(this.freeRadioButton_CheckedChanged);
             // 
             // secondhandPurchaseRadioButton
             // 
@@ -152,6 +160,7 @@
             this.secondhandPurchaseRadioButton.TabStop = true;
             this.secondhandPurchaseRadioButton.Text = "Ostettu käytettynä";
             this.secondhandPurchaseRadioButton.UseVisualStyleBackColor = true;
+            this.secondhandPurchaseRadioButton.CheckedChanged += new System.EventHandler(this.secondhandPurchaseRadioButton_CheckedChanged);
             // 
             // viewButton
             // 
@@ -161,6 +170,7 @@
             this.viewButton.TabIndex = 10;
             this.viewButton.Text = "Katso listaa";
             this.viewButton.UseVisualStyleBackColor = true;
+            this.viewButton.Click += new System.EventHandler(this.viewButton_Click);
             // 
             // viewTossedListRadioButton
             // 
@@ -172,6 +182,7 @@
             this.viewTossedListRadioButton.TabStop = true;
             this.viewTossedListRadioButton.Text = "Siivotut tavarat";
             this.viewTossedListRadioButton.UseVisualStyleBackColor = true;
+            this.viewTossedListRadioButton.CheckedChanged += new System.EventHandler(this.viewTossedListRadioButton_CheckedChanged);
             // 
             // viewAcquiredListRadioButton
             // 
@@ -183,6 +194,7 @@
             this.viewAcquiredListRadioButton.TabStop = true;
             this.viewAcquiredListRadioButton.Text = "Hankitut tavarat";
             this.viewAcquiredListRadioButton.UseVisualStyleBackColor = true;
+            this.viewAcquiredListRadioButton.CheckedChanged += new System.EventHandler(this.viewAcquiredListRadioButton_CheckedChanged);
             // 
             // tossedTypeGroupBox
             // 
@@ -233,6 +245,7 @@
             this.Controls.Add(this.textBox1);
             this.Name = "MainForm";
             this.Text = "Siivoussovellus";
+            this.Load += new System.EventHandler(this.MainForm_Load);
             this.tossedTypeGroupBox.ResumeLayout(false);
             this.tossedTypeGroupBox.PerformLayout();
             this.acquiredTypeGroupBox.ResumeLayout(false);
