@@ -101,36 +101,42 @@ namespace SiivoApp
                 //tähän asian lisäys Heitetty pois -listalle
                 thrownAway.Add(new ItemListRow(textBox1.Text));
                 MessageBox.Show("Lisäsit asian Heitetty pois -listalle!");
+                textBox1.Clear();
             }
             else if (charityRadioButton.Checked)
             {
                 //tähän asian lisäys Annettu pois -listalle
                 charity.Add(new ItemListRow(textBox1.Text));
                 MessageBox.Show("Lisäsit asian Annettu pois -listalle!");
+                textBox1.Clear();
             }
             else if (soldRadioButton.Checked)
             {
                 //tähän asian lisäys Myyty -listalle
                 sold.Add(new ItemListRow(textBox1.Text));
                 MessageBox.Show("Lisäsit asian Myyty -listalle!");
+                textBox1.Clear();
             }
             else if (newPurchaseRadioButton.Checked)
             {
                 //tähän asian lisäys Ostettu uutena -listalle
                 newPurchase.Add(new ItemListRow(textBox1.Text));
                 MessageBox.Show("Lisäsit asian Ostettu uutena -listalle!");
+                textBox1.Clear();
             }
             else if (freeRadioButton.Checked)
             {
                 //tähän asian lisäys Saatu ilmaiseksi -listalle
                 free.Add(new ItemListRow(textBox1.Text));
                 MessageBox.Show("Lisäsit asian Saatu ilmaiseksi -listalle!");
+                textBox1.Clear();
             }
             else if (secondhandPurchaseRadioButton.Checked)
             {
                 //tähän asian lisäys Ostettu käytettynä -listalle
                 secondhand.Add(new ItemListRow(textBox1.Text));
                 MessageBox.Show("Lisäsit asian Ostettu käytettynä -listalle!");
+                textBox1.Clear();
             }
             else
             {
@@ -164,12 +170,16 @@ namespace SiivoApp
             // Tarkista kumpi radiobutton on valittuna
             if (viewAcquiredListRadioButton.Checked)
             {
+                //Tähän kohtaan tietojen tallennus tiedostoon -hommaa?
+
                 // Avaa AcquiredForm, jos viewAcquiredListRadioButton on valittuna
                 AcquiredForm form1 = new AcquiredForm();
                 form1.Show();
             }
             else if (viewTossedListRadioButton.Checked)
             {
+                //Tähän kohtaan tietojen tallennus -hommaa?
+
                 // Avaa TossedForm, jos viewTossedListRadioButton on valittuna
                 TossedForm form2 = new TossedForm();
                 form2.Show();
@@ -194,6 +204,11 @@ namespace SiivoApp
         private void textBox1_TextChanged(object sender, EventArgs e)
         {
 
+        }
+
+        private void MainForm_FormClosing(object sender, FormClosingEventArgs e)
+        {
+            //Laita tähän tietojen tallennus tiedostoon
         }
     }
 }
