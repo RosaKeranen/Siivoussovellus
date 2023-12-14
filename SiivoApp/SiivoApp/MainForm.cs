@@ -15,7 +15,12 @@ namespace SiivoApp
 {
     public partial class MainForm : Form
     {
-        private List<ItemListRow> pois = new List<ItemListRow>();
+        private List<ItemListRow> thrownAway = new List<ItemListRow>();
+        private List<ItemListRow> charity = new List<ItemListRow>();
+        private List<ItemListRow> sold = new List<ItemListRow>();
+        private List<ItemListRow> newPurchase = new List<ItemListRow>();
+        private List<ItemListRow> free = new List<ItemListRow>();
+        private List<ItemListRow> secondhand = new List<ItemListRow>();
 
         public MainForm()
         {
@@ -94,31 +99,37 @@ namespace SiivoApp
             if (thrownAwayRadioButton.Checked)
             {
                 //tähän asian lisäys Heitetty pois -listalle
+                thrownAway.Add(new ItemListRow(textBox1.Text));
                 MessageBox.Show("Lisäsit asian Heitetty pois -listalle!");
             }
             else if (charityRadioButton.Checked)
             {
                 //tähän asian lisäys Annettu pois -listalle
+                charity.Add(new ItemListRow(textBox1.Text));
                 MessageBox.Show("Lisäsit asian Annettu pois -listalle!");
             }
             else if (soldRadioButton.Checked)
             {
                 //tähän asian lisäys Myyty -listalle
+                sold.Add(new ItemListRow(textBox1.Text));
                 MessageBox.Show("Lisäsit asian Myyty -listalle!");
             }
             else if (newPurchaseRadioButton.Checked)
             {
                 //tähän asian lisäys Ostettu uutena -listalle
+                newPurchase.Add(new ItemListRow(textBox1.Text));
                 MessageBox.Show("Lisäsit asian Ostettu uutena -listalle!");
             }
             else if (freeRadioButton.Checked)
             {
                 //tähän asian lisäys Saatu ilmaiseksi -listalle
+                free.Add(new ItemListRow(textBox1.Text));
                 MessageBox.Show("Lisäsit asian Saatu ilmaiseksi -listalle!");
             }
             else if (secondhandPurchaseRadioButton.Checked)
             {
                 //tähän asian lisäys Ostettu käytettynä -listalle
+                secondhand.Add(new ItemListRow(textBox1.Text));
                 MessageBox.Show("Lisäsit asian Ostettu käytettynä -listalle!");
             }
             else
