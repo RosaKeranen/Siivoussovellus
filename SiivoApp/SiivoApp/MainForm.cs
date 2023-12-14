@@ -22,7 +22,6 @@ namespace SiivoApp
 
             tossedTypeGroupBox.Enabled = false;
             acquiredTypeGroupBox.Enabled = false;
-            addButton.Enabled = false;
         }
 
         private void MainForm_Load(object sender, EventArgs e)
@@ -46,7 +45,7 @@ namespace SiivoApp
         {
             if (acquiredRadioButton.Checked)
             {
-                tossedRadioButton.Checked = false;
+                thrownAwayRadioButton.Checked = false;
                 charityRadioButton.Checked = false;
                 soldRadioButton.Checked = false;
                 acquiredTypeGroupBox.Enabled = true;
@@ -56,32 +55,32 @@ namespace SiivoApp
 
         private void thrownAwayRadioButton_CheckedChanged(object sender, EventArgs e)
         {
-            addButton.Enabled = true;
+       
         }
 
         private void charityRadioButton_CheckedChanged(object sender, EventArgs e)
         {
-            addButton.Enabled = true;
+         
         }
 
         private void soldRadioButton_CheckedChanged(object sender, EventArgs e)
         {
-            addButton.Enabled = true;
+          
         }
 
         private void newPurchaseRadioButton_CheckedChanged(object sender, EventArgs e)
         {
-            addButton.Enabled = true;
+          
         }
 
         private void freeRadioButton_CheckedChanged(object sender, EventArgs e)
         {
-            addButton.Enabled = true;
+          
         }
 
         private void secondhandPurchaseRadioButton_CheckedChanged(object sender, EventArgs e)
         {
-            addButton.Enabled = true;
+          
         }
 
         private void addButton_Click(object sender, EventArgs e)
