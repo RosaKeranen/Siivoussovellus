@@ -21,6 +21,14 @@ namespace SiivoApp
         private List<ItemListRow> newPurchase = new List<ItemListRow>();
         private List<ItemListRow> free = new List<ItemListRow>();
         private List<ItemListRow> secondhand = new List<ItemListRow>();
+        private FileHelper fileHelper = new FileHelper();
+
+        private const string thrownAwayListFileName = "thrownAway.json";
+        private const string charityListFileName = "charity.json";
+        private const string soldListFileName = "sold.json";
+        private const string newPurchaseListFileName = "newPurchase.json";
+        private const string freeListFileName = "free.json";
+        private const string secondhandListFileName = "secondhand.json";
 
         public MainForm()
         {
@@ -148,8 +156,6 @@ namespace SiivoApp
             //var x = new FileHelper();
 
             //var y = new List<ItemListRow>();
-            //y.Add(new ItemListRow("roska1"));
-            //y.Add(new ItemListRow("roska2"));
 
             //x.WriteToFile("lista1.json", y);
 
@@ -208,7 +214,13 @@ namespace SiivoApp
 
         private void MainForm_FormClosing(object sender, FormClosingEventArgs e)
         {
-            //Laita tähän tietojen tallennus tiedostoon
+            //Tietojen tallennus tiedostoon, jokaiselle listalle on oma tiedosto
+            fileHelper.WriteToFile(thrownAwayListFileName, thrownAway);
+            fileHelper.WriteToFile(charityListFileName, charity);
+            fileHelper.WriteToFile(soldListFileName, sold);
+            fileHelper.WriteToFile(newPurchaseListFileName, newPurchase);
+            fileHelper.WriteToFile(freeListFileName, free);
+            fileHelper.WriteToFile(secondhandListFileName, secondhand);
         }
     }
 }
