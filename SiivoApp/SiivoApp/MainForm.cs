@@ -22,6 +22,7 @@ namespace SiivoApp
 
             tossedTypeGroupBox.Enabled = false;
             acquiredTypeGroupBox.Enabled = false;
+            addButton.Enabled = false;
         }
 
         private void MainForm_Load(object sender, EventArgs e)
@@ -38,6 +39,7 @@ namespace SiivoApp
                 secondhandPurchaseRadioButton.Checked = false;
                 tossedTypeGroupBox.Enabled = true;
                 acquiredTypeGroupBox.Enabled = false;
+                addButton.Enabled = true;
             }
         }
 
@@ -50,6 +52,7 @@ namespace SiivoApp
                 soldRadioButton.Checked = false;
                 acquiredTypeGroupBox.Enabled = true;
                 tossedTypeGroupBox.Enabled = false;
+                addButton.Enabled=true;
             }
         }
 
@@ -85,13 +88,14 @@ namespace SiivoApp
 
         private void addButton_Click(object sender, EventArgs e)
         {
-            var x = new FileHelper();
+                    var x = new FileHelper();
 
-            var y = new List<ItemListRow>();
-            y.Add(new ItemListRow("roska1"));
-            y.Add(new ItemListRow("roska2"));
+                    var y = new List<ItemListRow>();
+                    y.Add(new ItemListRow("roska1"));
+                    y.Add(new ItemListRow("roska2"));
 
-            x.WriteToFile("lista1.json", y);
+                    x.WriteToFile("lista1.json", y);
+           
         }
 
         private void viewAcquiredListRadioButton_CheckedChanged(object sender, EventArgs e)
