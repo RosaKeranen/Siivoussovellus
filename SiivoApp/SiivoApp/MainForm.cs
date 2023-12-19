@@ -2,25 +2,18 @@
 using SiivoApp.Helpers;
 using System;
 using System.Collections.Generic;
-using System.ComponentModel;
-using System.Data;
-using System.Drawing;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 using System.Windows.Forms;
-using static System.Windows.Forms.VisualStyles.VisualStyleElement.Button;
 
 namespace SiivoApp
 {
     public partial class MainForm : Form
     {
-        private List<ItemListRow> thrownAway = new List<ItemListRow>();
-        private List<ItemListRow> charity = new List<ItemListRow>();
-        private List<ItemListRow> sold = new List<ItemListRow>();
-        private List<ItemListRow> newPurchase = new List<ItemListRow>();
-        private List<ItemListRow> free = new List<ItemListRow>();
-        private List<ItemListRow> secondhand = new List<ItemListRow>();
+        private List<ItemListRow> thrownAway;
+        private List<ItemListRow> charity;
+        private List<ItemListRow> sold;
+        private List<ItemListRow> newPurchase;
+        private List<ItemListRow> free;
+        private List<ItemListRow> secondhand;
         private FileHelper fileHelper = new FileHelper();
 
         private const string thrownAwayListFileName = "thrownAway.json";
@@ -39,6 +32,12 @@ namespace SiivoApp
             addButton.Enabled = false;
 
             // TODO: Täytä listat tiedostoista
+            thrownAway = fileHelper.ReadFromFile(thrownAwayListFileName);
+            charity = fileHelper.ReadFromFile(charityListFileName);
+            sold = fileHelper.ReadFromFile(soldListFileName);
+            newPurchase = fileHelper.ReadFromFile(newPurchaseListFileName);
+            free = fileHelper.ReadFromFile(freeListFileName);
+            secondhand = fileHelper.ReadFromFile(secondhandListFileName);
         }
 
         private void MainForm_Load(object sender, EventArgs e)

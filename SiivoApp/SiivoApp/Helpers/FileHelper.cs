@@ -1,13 +1,7 @@
-﻿using SiivoApp.DTO;
-using System;
+﻿using Newtonsoft.Json;
+using SiivoApp.DTO;
 using System.Collections.Generic;
 using System.IO;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-using Newtonsoft.Json;
-
-// Newtonsoft.Json
 
 namespace SiivoApp.Helpers
 {
@@ -15,7 +9,7 @@ namespace SiivoApp.Helpers
     {
         public FileHelper() { }
 
-        public void WriteToFile(string filename,List<ItemListRow> itemListRows) 
+        public void WriteToFile(string filename, List<ItemListRow> itemListRows) 
         {
             using (var stream = new FileStream(filename, FileMode.Create))
             {
@@ -24,14 +18,29 @@ namespace SiivoApp.Helpers
 
                 var serializer = new JsonSerializer();
                 serializer.Serialize(writer, itemListRows);
-                
-                //var serializer = new DataContractJsonSerializer(typeof(List<InputItem>));
-                //serializer.WriteObject(stream, data);
+
             }
         }
 
-        //public List<ItemListRow> ReadFromFile()
-        //{
-        //}
+        public List<ItemListRow> ReadFromFile(string filename)
+        {
+            List<ItemListRow> thingsList = new List<ItemListRow>();
+
+            if (File.Exists(filename) == false)
+            {
+                return thingsList;
+            }
+
+            using (var stream = File.OpenRead(filename)) 
+            { 
+                var reader = new StreamReader(stream);
+                var jReader = new JsonTextReader(reader);
+
+                var serializer = new JsonSerializer();
+                thingsList = serializer.Deserialize<List<ItemListRow>>(jReader);
+            }
+
+            return thingsList;
+        }
     }
 }
