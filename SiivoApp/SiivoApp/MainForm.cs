@@ -27,6 +27,7 @@ namespace SiivoApp
         {
             InitializeComponent();
 
+            // Lisää listalle- nappi ja groupBoxit eivät aluksi ole valittavissa
             tossedTypeGroupBox.Enabled = false;
             acquiredTypeGroupBox.Enabled = false;
             addButton.Enabled = false;
@@ -45,6 +46,7 @@ namespace SiivoApp
 
         }
 
+        // Jos käyttäjä valitsee Siivottu -radioButtonin, siivousvalintojen groupBox ja Lisää-nappi tulevat aktiivisiksi
         private void tossedRadioButton_CheckedChanged(object sender, EventArgs e)
         {
             if (tossedRadioButton.Checked)
@@ -58,6 +60,7 @@ namespace SiivoApp
             }
         }
 
+        // Jos käyttäjä valitsee Hankittu -radioButtonin, ostosvalintojen groupBox ja Lisää-nappi tulevat aktiivisiksi
         private void acquiredRadioButton_CheckedChanged(object sender, EventArgs e)
         {
             if (acquiredRadioButton.Checked)
@@ -71,82 +74,54 @@ namespace SiivoApp
             }
         }
 
-        private void thrownAwayRadioButton_CheckedChanged(object sender, EventArgs e)
-        {
-       
-        }
-
-        private void charityRadioButton_CheckedChanged(object sender, EventArgs e)
-        {
-         
-        }
-
-        private void soldRadioButton_CheckedChanged(object sender, EventArgs e)
-        {
-          
-        }
-
-        private void newPurchaseRadioButton_CheckedChanged(object sender, EventArgs e)
-        {
-          
-        }
-
-        private void freeRadioButton_CheckedChanged(object sender, EventArgs e)
-        {
-          
-        }
-
-        private void secondhandPurchaseRadioButton_CheckedChanged(object sender, EventArgs e)
-        {
-          
-        }
-
+        // Tässä klikataan Lisää listalle -nappia
         private void addButton_Click(object sender, EventArgs e)
         {
             if (thrownAwayRadioButton.Checked)
             {
-                //tähän asian lisäys Heitetty pois -listalle
+                // Tässä asia lisätään Heitetty pois -listalle
                 thrownAway.Add(new ItemListRow(textBox1.Text));
                 MessageBox.Show("Lisäsit asian Heitetty pois -listalle!");
                 textBox1.Clear();
             }
             else if (charityRadioButton.Checked)
             {
-                //tähän asian lisäys Annettu pois -listalle
+                //Tässä asia lisätään Annettu pois -listalle
                 charity.Add(new ItemListRow(textBox1.Text));
                 MessageBox.Show("Lisäsit asian Annettu pois -listalle!");
                 textBox1.Clear();
             }
             else if (soldRadioButton.Checked)
             {
-                //tähän asian lisäys Myyty -listalle
+                //Tässä asia lisätään Myyty -listalle
                 sold.Add(new ItemListRow(textBox1.Text));
                 MessageBox.Show("Lisäsit asian Myyty -listalle!");
                 textBox1.Clear();
             }
             else if (newPurchaseRadioButton.Checked)
             {
-                //tähän asian lisäys Ostettu uutena -listalle
+                //Tässä asia lisätään Ostettu uutena -listalle
                 newPurchase.Add(new ItemListRow(textBox1.Text));
                 MessageBox.Show("Lisäsit asian Ostettu uutena -listalle!");
                 textBox1.Clear();
             }
             else if (freeRadioButton.Checked)
             {
-                //tähän asian lisäys Saatu ilmaiseksi -listalle
+                //Tässä asia lisätään Saatu ilmaiseksi -listalle
                 free.Add(new ItemListRow(textBox1.Text));
                 MessageBox.Show("Lisäsit asian Saatu ilmaiseksi -listalle!");
                 textBox1.Clear();
             }
             else if (secondhandPurchaseRadioButton.Checked)
             {
-                //tähän asian lisäys Ostettu käytettynä -listalle
+                //Tässä asia lisätään Ostettu käytettynä -listalle
                 secondhand.Add(new ItemListRow(textBox1.Text));
                 MessageBox.Show("Lisäsit asian Ostettu käytettynä -listalle!");
                 textBox1.Clear();
             }
             else
             {
+                // Jos käyttäjä unohti valita groupBoxista radioButtonin, viesti muistuttaa sitä
                 MessageBox.Show("Valitse joku vaihtoehto.");
             }
 
@@ -162,24 +137,25 @@ namespace SiivoApp
 
         }
 
+        // Tässä klikataan Katso listaa -nappia
         private void viewButton_Click(object sender, EventArgs e)
         {
-            // Tarkista kumpi radiobutton on valittuna
+            // Tarkistus, kumpi radiobutton on valittuna
             if (viewAcquiredListRadioButton.Checked)
             {
-               // Tallentaa listat 
+               // Tallentaa listat tässä vaiheessa, jotta käyttäjä näkee ajantasalla olevan tilanteen
                 Save();
 
-                // Avaa AcquiredForm, jos viewAcquiredListRadioButton on valittuna
+                // Avaa ormin, jos viewAcquiredListRadioButton on valittuna
                 AcquiredForm form1 = new AcquiredForm();
                 form1.Show();
             }
             else if (viewTossedListRadioButton.Checked)
             {
-                // Tallentaa listat
+                // Tallentaa listat tässä vaiheessa, jotta käyttäjä näkee ajantasalla olevan tilanteen
                 Save();
 
-                // Avaa TossedForm, jos viewTossedListRadioButton on valittuna
+                // Avaa Siivottujen asioiden formin, jos viewTossedListRadioButton on valittuna
                 TossedForm form2 = new TossedForm();
                 form2.Show();
             }

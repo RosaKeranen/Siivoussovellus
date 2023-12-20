@@ -106,7 +106,6 @@
             this.thrownAwayRadioButton.TabStop = true;
             this.thrownAwayRadioButton.Text = "Heitetty roskiin";
             this.thrownAwayRadioButton.UseVisualStyleBackColor = true;
-            this.thrownAwayRadioButton.CheckedChanged += new System.EventHandler(this.thrownAwayRadioButton_CheckedChanged);
             // 
             // charityRadioButton
             // 
@@ -119,7 +118,6 @@
             this.charityRadioButton.TabStop = true;
             this.charityRadioButton.Text = "Annettu pois";
             this.charityRadioButton.UseVisualStyleBackColor = true;
-            this.charityRadioButton.CheckedChanged += new System.EventHandler(this.charityRadioButton_CheckedChanged);
             // 
             // soldRadioButton
             // 
@@ -132,7 +130,6 @@
             this.soldRadioButton.TabStop = true;
             this.soldRadioButton.Text = "Myyty";
             this.soldRadioButton.UseVisualStyleBackColor = true;
-            this.soldRadioButton.CheckedChanged += new System.EventHandler(this.soldRadioButton_CheckedChanged);
             // 
             // newPurchaseRadioButton
             // 
@@ -145,7 +142,6 @@
             this.newPurchaseRadioButton.TabStop = true;
             this.newPurchaseRadioButton.Text = "Ostettu uutena";
             this.newPurchaseRadioButton.UseVisualStyleBackColor = true;
-            this.newPurchaseRadioButton.CheckedChanged += new System.EventHandler(this.newPurchaseRadioButton_CheckedChanged);
             // 
             // freeRadioButton
             // 
@@ -158,7 +154,6 @@
             this.freeRadioButton.TabStop = true;
             this.freeRadioButton.Text = "Saatu ilmaiseksi";
             this.freeRadioButton.UseVisualStyleBackColor = true;
-            this.freeRadioButton.CheckedChanged += new System.EventHandler(this.freeRadioButton_CheckedChanged);
             // 
             // secondhandPurchaseRadioButton
             // 
@@ -171,7 +166,6 @@
             this.secondhandPurchaseRadioButton.TabStop = true;
             this.secondhandPurchaseRadioButton.Text = "Ostettu käytettynä";
             this.secondhandPurchaseRadioButton.UseVisualStyleBackColor = true;
-            this.secondhandPurchaseRadioButton.CheckedChanged += new System.EventHandler(this.secondhandPurchaseRadioButton_CheckedChanged);
             // 
             // viewButton
             // 

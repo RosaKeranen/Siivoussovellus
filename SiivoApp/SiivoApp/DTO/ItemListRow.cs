@@ -18,5 +18,10 @@ namespace SiivoApp.DTO
             this.Text = Text;
             Timestamp = DateTime.Now;
         }
+
+        public override string ToString()
+        {
+            return Text;
+        }
     }
 }

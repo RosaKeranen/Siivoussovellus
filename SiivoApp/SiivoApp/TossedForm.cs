@@ -35,7 +35,9 @@ namespace SiivoApp
 
         private void TossedForm_Load(object sender, EventArgs e)
         {
-
+            thrownAwayListBox.Items.AddRange(thrownAway.ToArray());
+            charityListBox.Items.AddRange(charity.ToArray());
+            soldListBox.Items.AddRange(sold.ToArray());
         }
     }
 }
