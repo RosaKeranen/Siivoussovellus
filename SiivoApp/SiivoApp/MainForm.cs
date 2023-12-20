@@ -8,6 +8,7 @@ namespace SiivoApp
 {
     public partial class MainForm : Form
     {
+        // Tässä esitellään muuttujat tavaroiden listoille
         private List<ItemListRow> thrownAway;
         private List<ItemListRow> charity;
         private List<ItemListRow> sold;
@@ -15,6 +16,7 @@ namespace SiivoApp
         private List<ItemListRow> free;
         private List<ItemListRow> secondhand;
 
+        // Tässä teen instanssin FileHelper-luokasta
         private FileHelper fileHelper = new FileHelper();
 
         private const string thrownAwayListFileName = "thrownAway.json";
