@@ -43,95 +43,108 @@
             // newPurchaseListBox
             // 
             this.newPurchaseListBox.FormattingEnabled = true;
-            this.newPurchaseListBox.Location = new System.Drawing.Point(48, 110);
+            this.newPurchaseListBox.ItemHeight = 20;
+            this.newPurchaseListBox.Location = new System.Drawing.Point(72, 169);
+            this.newPurchaseListBox.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.newPurchaseListBox.Name = "newPurchaseListBox";
-            this.newPurchaseListBox.Size = new System.Drawing.Size(202, 251);
+            this.newPurchaseListBox.Size = new System.Drawing.Size(301, 384);
             this.newPurchaseListBox.TabIndex = 0;
             // 
             // secondhandListBox
             // 
             this.secondhandListBox.FormattingEnabled = true;
-            this.secondhandListBox.Location = new System.Drawing.Point(493, 110);
+            this.secondhandListBox.ItemHeight = 20;
+            this.secondhandListBox.Location = new System.Drawing.Point(740, 169);
+            this.secondhandListBox.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.secondhandListBox.Name = "secondhandListBox";
-            this.secondhandListBox.Size = new System.Drawing.Size(202, 251);
+            this.secondhandListBox.Size = new System.Drawing.Size(301, 384);
             this.secondhandListBox.TabIndex = 1;
             // 
             // freeListBox
             // 
             this.freeListBox.FormattingEnabled = true;
-            this.freeListBox.Location = new System.Drawing.Point(271, 110);
+            this.freeListBox.ItemHeight = 20;
+            this.freeListBox.Location = new System.Drawing.Point(406, 169);
+            this.freeListBox.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.freeListBox.Name = "freeListBox";
-            this.freeListBox.Size = new System.Drawing.Size(202, 251);
+            this.freeListBox.Size = new System.Drawing.Size(301, 384);
             this.freeListBox.TabIndex = 2;
             // 
             // acquiredViewLabel
             // 
             this.acquiredViewLabel.AutoSize = true;
-            this.acquiredViewLabel.Location = new System.Drawing.Point(325, 37);
+            this.acquiredViewLabel.Location = new System.Drawing.Point(488, 57);
+            this.acquiredViewLabel.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.acquiredViewLabel.Name = "acquiredViewLabel";
-            this.acquiredViewLabel.Size = new System.Drawing.Size(72, 13);
+            this.acquiredViewLabel.Size = new System.Drawing.Size(107, 20);
             this.acquiredViewLabel.TabIndex = 3;
             this.acquiredViewLabel.Text = "Hankitut asiat";
             // 
             // newPurchaseLabel
             // 
             this.newPurchaseLabel.AutoSize = true;
-            this.newPurchaseLabel.Location = new System.Drawing.Point(45, 82);
+            this.newPurchaseLabel.Location = new System.Drawing.Point(68, 126);
+            this.newPurchaseLabel.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.newPurchaseLabel.Name = "newPurchaseLabel";
-            this.newPurchaseLabel.Size = new System.Drawing.Size(77, 13);
+            this.newPurchaseLabel.Size = new System.Drawing.Size(116, 20);
             this.newPurchaseLabel.TabIndex = 4;
             this.newPurchaseLabel.Text = "Ostettu uutena";
             // 
             // freeLabel
             // 
             this.freeLabel.AutoSize = true;
-            this.freeLabel.Location = new System.Drawing.Point(271, 82);
+            this.freeLabel.Location = new System.Drawing.Point(406, 126);
+            this.freeLabel.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.freeLabel.Name = "freeLabel";
-            this.freeLabel.Size = new System.Drawing.Size(82, 13);
+            this.freeLabel.Size = new System.Drawing.Size(123, 20);
             this.freeLabel.TabIndex = 5;
             this.freeLabel.Text = "Saatu ilmaiseksi";
             // 
             // secondhandLabel
             // 
             this.secondhandLabel.AutoSize = true;
-            this.secondhandLabel.Location = new System.Drawing.Point(490, 82);
+            this.secondhandLabel.Location = new System.Drawing.Point(735, 126);
+            this.secondhandLabel.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.secondhandLabel.Name = "secondhandLabel";
-            this.secondhandLabel.Size = new System.Drawing.Size(93, 13);
+            this.secondhandLabel.Size = new System.Drawing.Size(139, 20);
             this.secondhandLabel.TabIndex = 6;
             this.secondhandLabel.Text = "Ostettu käytettynä";
             // 
             // newPurchaseCountLabel
             // 
             this.newPurchaseCountLabel.AutoSize = true;
-            this.newPurchaseCountLabel.Location = new System.Drawing.Point(45, 376);
+            this.newPurchaseCountLabel.Location = new System.Drawing.Point(68, 578);
+            this.newPurchaseCountLabel.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.newPurchaseCountLabel.Name = "newPurchaseCountLabel";
-            this.newPurchaseCountLabel.Size = new System.Drawing.Size(143, 13);
+            this.newPurchaseCountLabel.Size = new System.Drawing.Size(215, 20);
             this.newPurchaseCountLabel.TabIndex = 7;
             this.newPurchaseCountLabel.Text = "Uutena ostettujen lukumäärä";
             // 
             // freeCountLabel
             // 
             this.freeCountLabel.AutoSize = true;
-            this.freeCountLabel.Location = new System.Drawing.Point(274, 376);
+            this.freeCountLabel.Location = new System.Drawing.Point(411, 578);
+            this.freeCountLabel.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.freeCountLabel.Name = "freeCountLabel";
-            this.freeCountLabel.Size = new System.Drawing.Size(147, 13);
+            this.freeCountLabel.Size = new System.Drawing.Size(221, 20);
             this.freeCountLabel.TabIndex = 8;
             this.freeCountLabel.Text = "Ilmaiseksi saatujen lukumäärä";
             // 
             // secondhandCountLabel
             // 
             this.secondhandCountLabel.AutoSize = true;
-            this.secondhandCountLabel.Location = new System.Drawing.Point(493, 376);
+            this.secondhandCountLabel.Location = new System.Drawing.Point(740, 578);
+            this.secondhandCountLabel.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.secondhandCountLabel.Name = "secondhandCountLabel";
-            this.secondhandCountLabel.Size = new System.Drawing.Size(158, 13);
+            this.secondhandCountLabel.Size = new System.Drawing.Size(237, 20);
             this.secondhandCountLabel.TabIndex = 9;
             this.secondhandCountLabel.Text = "Käytettynä ostettujen lukumäärä";
             // 
             // AcquiredForm
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 20F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(800, 450);
+            this.ClientSize = new System.Drawing.Size(1200, 692);
             this.Controls.Add(this.secondhandCountLabel);
             this.Controls.Add(this.freeCountLabel);
             this.Controls.Add(this.newPurchaseCountLabel);
@@ -142,8 +155,10 @@
             this.Controls.Add(this.freeListBox);
             this.Controls.Add(this.secondhandListBox);
             this.Controls.Add(this.newPurchaseListBox);
+            this.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.Name = "AcquiredForm";
             this.Text = "Hankitut asiat";
+            this.Load += new System.EventHandler(this.AcquiredForm_Load);
             this.ResumeLayout(false);
             this.PerformLayout();
 

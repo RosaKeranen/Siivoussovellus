@@ -14,6 +14,7 @@ namespace SiivoApp
         private List<ItemListRow> newPurchase;
         private List<ItemListRow> free;
         private List<ItemListRow> secondhand;
+
         private FileHelper fileHelper = new FileHelper();
 
         private const string thrownAwayListFileName = "thrownAway.json";
@@ -27,7 +28,7 @@ namespace SiivoApp
         {
             InitializeComponent();
 
-            // Lisää listalle- nappi ja groupBoxit eivät aluksi ole valittavissa
+            // Lisää listalle -nappi ja groupBoxit eivät aluksi ole valittavissa
             tossedTypeGroupBox.Enabled = false;
             acquiredTypeGroupBox.Enabled = false;
             addButton.Enabled = false;
@@ -121,7 +122,7 @@ namespace SiivoApp
             }
             else
             {
-                // Jos käyttäjä unohti valita groupBoxista radioButtonin, viesti muistuttaa sitä
+                // Jos käyttäjä unohti valita groupBoxista radioButtonin, viesti muistuttaa siitä
                 MessageBox.Show("Valitse joku vaihtoehto.");
             }
 
