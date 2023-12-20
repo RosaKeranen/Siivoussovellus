@@ -31,7 +31,7 @@ namespace SiivoApp
             acquiredTypeGroupBox.Enabled = false;
             addButton.Enabled = false;
 
-            // TODO: Täytä listat tiedostoista
+        
             thrownAway = fileHelper.ReadFromFile(thrownAwayListFileName);
             charity = fileHelper.ReadFromFile(charityListFileName);
             sold = fileHelper.ReadFromFile(soldListFileName);
@@ -149,14 +149,6 @@ namespace SiivoApp
             {
                 MessageBox.Show("Valitse joku vaihtoehto.");
             }
-  
-            //pois.Add(new ItemListRow(textBox1.Text));
-
-            //var x = new FileHelper();
-
-            //var y = new List<ItemListRow>();
-
-            //x.WriteToFile("lista1.json", y);
 
         }
 
@@ -175,7 +167,8 @@ namespace SiivoApp
             // Tarkista kumpi radiobutton on valittuna
             if (viewAcquiredListRadioButton.Checked)
             {
-                //Tähän kohtaan tietojen tallennus tiedostoon -hommaa?
+               // Tallentaa listat 
+                Save();
 
                 // Avaa AcquiredForm, jos viewAcquiredListRadioButton on valittuna
                 AcquiredForm form1 = new AcquiredForm();
@@ -183,7 +176,8 @@ namespace SiivoApp
             }
             else if (viewTossedListRadioButton.Checked)
             {
-                //Tähän kohtaan tietojen tallennus -hommaa?
+                // Tallentaa listat
+                Save();
 
                 // Avaa TossedForm, jos viewTossedListRadioButton on valittuna
                 TossedForm form2 = new TossedForm();
@@ -212,6 +206,11 @@ namespace SiivoApp
         }
 
         private void MainForm_FormClosing(object sender, FormClosingEventArgs e)
+        {
+            Save();
+        }
+
+        private void Save()
         {
             //Tietojen tallennus tiedostoon, jokaiselle listalle on oma tiedosto
             fileHelper.WriteToFile(thrownAwayListFileName, thrownAway);
