@@ -39,6 +39,28 @@ namespace SiivoApp
             newPurchaseListBox.Items.AddRange(newPurchase.ToArray());
             freeListBox.Items.AddRange(free.ToArray());
             secondhandListBox.Items.AddRange(secondhand.ToArray());
+
+            UpdateLabelCount();
+        }
+
+        public void UpdateLabelCount()
+        {
+            newPurchaseCountLabel.Text = $"Uutena ostettuja yhteensä: {newPurchase.Count} kpl";
+            freeCountLabel.Text = $"Ilmaiseksi saatuja yhteensä: {free.Count} kpl";
+            secondhandCountLabel.Text = $"Käytettynä ostettuja yhteensä: {secondhand.Count} kpl";
+        }
+
+        private void newPurchaseCountLabel_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void acquiredDeleteButton_Click(object sender, EventArgs e)
+        {
+            //Tässä käyttäjä voisi valita listBoxissa olevia asioita klikkaamalla ja poistaa ne delete-napilla.
+            //Käyttäjä voi valita vain yhden asian kerrallaan.
+            //Klikkauksen jälkeen ohjelma näyttää viestin: "Haluatko varmasti poistaa?" Viestilaatikoista voi valita kyllä tai ei.
+            //Jos käyttäjä klikkaa viestilaatikossa kyllä, valittu asia poistetaan listBoxista ja tiedostosta. Jos klikkaa ei, mitään ei poisteta.
         }
     }
 }

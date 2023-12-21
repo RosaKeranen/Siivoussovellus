@@ -32,6 +32,23 @@ namespace SiivoApp
             thrownAwayListBox.Items.AddRange(thrownAway.ToArray());
             charityListBox.Items.AddRange(charity.ToArray());
             soldListBox.Items.AddRange(sold.ToArray());
+
+            UpdateLabelCount();
+        }
+
+        public void UpdateLabelCount()
+        {
+            thrownAwayCountLabel.Text = $"Pois heitettyjä yhteensä: {thrownAway.Count} kpl";
+            charityCountLabel.Text = $"Pois annettuja yhteensä: {charity.Count} kpl";
+            soldCountLabel.Text = $"Myytyjä yhteensä: {sold.Count} kpl";
+        }
+
+        private void deleteTossedButton_Click(object sender, EventArgs e)
+        {
+            //Tässä käyttäjä voisi valita listBoxissa olevia asioita klikkaamalla ja poistaa ne delete-napilla.
+            //Käyttäjä voi valita vain yhden asian kerrallaan.
+            //Klikkauksen jälkeen ohjelma näyttää viestin: "Haluatko varmasti poistaa?" Viestilaatikoista voi valita kyllä tai ei.
+            //Jos käyttäjä klikkaa viestilaatikossa kyllä, valittu asia poistetaan listBoxista ja tiedostosta. Jos klikkaa ei, mitään ei poisteta.
         }
     }
 }

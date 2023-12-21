@@ -51,19 +51,17 @@
             // 
             // textBox1
             // 
-            this.textBox1.Location = new System.Drawing.Point(54, 60);
-            this.textBox1.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            this.textBox1.Location = new System.Drawing.Point(36, 39);
             this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(402, 26);
+            this.textBox1.Size = new System.Drawing.Size(269, 20);
             this.textBox1.TabIndex = 0;
             this.textBox1.TextChanged += new System.EventHandler(this.textBox1_TextChanged);
             // 
             // addButton
             // 
-            this.addButton.Location = new System.Drawing.Point(484, 51);
-            this.addButton.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            this.addButton.Location = new System.Drawing.Point(323, 33);
             this.addButton.Name = "addButton";
-            this.addButton.Size = new System.Drawing.Size(123, 48);
+            this.addButton.Size = new System.Drawing.Size(82, 31);
             this.addButton.TabIndex = 1;
             this.addButton.Text = "Lisää listalle";
             this.addButton.UseVisualStyleBackColor = true;
@@ -72,10 +70,9 @@
             // tossedRadioButton
             // 
             this.tossedRadioButton.AutoSize = true;
-            this.tossedRadioButton.Location = new System.Drawing.Point(54, 117);
-            this.tossedRadioButton.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            this.tossedRadioButton.Location = new System.Drawing.Point(36, 76);
             this.tossedRadioButton.Name = "tossedRadioButton";
-            this.tossedRadioButton.Size = new System.Drawing.Size(79, 24);
+            this.tossedRadioButton.Size = new System.Drawing.Size(60, 17);
             this.tossedRadioButton.TabIndex = 2;
             this.tossedRadioButton.TabStop = true;
             this.tossedRadioButton.Text = "Siivottu";
@@ -85,10 +82,9 @@
             // acquiredRadioButton
             // 
             this.acquiredRadioButton.AutoSize = true;
-            this.acquiredRadioButton.Location = new System.Drawing.Point(243, 117);
-            this.acquiredRadioButton.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            this.acquiredRadioButton.Location = new System.Drawing.Point(162, 76);
             this.acquiredRadioButton.Name = "acquiredRadioButton";
-            this.acquiredRadioButton.Size = new System.Drawing.Size(87, 24);
+            this.acquiredRadioButton.Size = new System.Drawing.Size(65, 17);
             this.acquiredRadioButton.TabIndex = 3;
             this.acquiredRadioButton.TabStop = true;
             this.acquiredRadioButton.Text = "Hankittu";
@@ -98,10 +94,9 @@
             // thrownAwayRadioButton
             // 
             this.thrownAwayRadioButton.AutoSize = true;
-            this.thrownAwayRadioButton.Location = new System.Drawing.Point(9, 31);
-            this.thrownAwayRadioButton.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            this.thrownAwayRadioButton.Location = new System.Drawing.Point(6, 20);
             this.thrownAwayRadioButton.Name = "thrownAwayRadioButton";
-            this.thrownAwayRadioButton.Size = new System.Drawing.Size(131, 24);
+            this.thrownAwayRadioButton.Size = new System.Drawing.Size(94, 17);
             this.thrownAwayRadioButton.TabIndex = 4;
             this.thrownAwayRadioButton.TabStop = true;
             this.thrownAwayRadioButton.Text = "Heitetty roskiin";
@@ -110,10 +105,9 @@
             // charityRadioButton
             // 
             this.charityRadioButton.AutoSize = true;
-            this.charityRadioButton.Location = new System.Drawing.Point(9, 68);
-            this.charityRadioButton.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            this.charityRadioButton.Location = new System.Drawing.Point(6, 44);
             this.charityRadioButton.Name = "charityRadioButton";
-            this.charityRadioButton.Size = new System.Drawing.Size(117, 24);
+            this.charityRadioButton.Size = new System.Drawing.Size(84, 17);
             this.charityRadioButton.TabIndex = 5;
             this.charityRadioButton.TabStop = true;
             this.charityRadioButton.Text = "Annettu pois";
@@ -122,10 +116,9 @@
             // soldRadioButton
             // 
             this.soldRadioButton.AutoSize = true;
-            this.soldRadioButton.Location = new System.Drawing.Point(9, 102);
-            this.soldRadioButton.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            this.soldRadioButton.Location = new System.Drawing.Point(6, 66);
             this.soldRadioButton.Name = "soldRadioButton";
-            this.soldRadioButton.Size = new System.Drawing.Size(66, 24);
+            this.soldRadioButton.Size = new System.Drawing.Size(52, 17);
             this.soldRadioButton.TabIndex = 6;
             this.soldRadioButton.TabStop = true;
             this.soldRadioButton.Text = "Myyty";
@@ -134,10 +127,9 @@
             // newPurchaseRadioButton
             // 
             this.newPurchaseRadioButton.AutoSize = true;
-            this.newPurchaseRadioButton.Location = new System.Drawing.Point(10, 29);
-            this.newPurchaseRadioButton.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            this.newPurchaseRadioButton.Location = new System.Drawing.Point(7, 19);
             this.newPurchaseRadioButton.Name = "newPurchaseRadioButton";
-            this.newPurchaseRadioButton.Size = new System.Drawing.Size(134, 24);
+            this.newPurchaseRadioButton.Size = new System.Drawing.Size(95, 17);
             this.newPurchaseRadioButton.TabIndex = 7;
             this.newPurchaseRadioButton.TabStop = true;
             this.newPurchaseRadioButton.Text = "Ostettu uutena";
@@ -146,10 +138,9 @@
             // freeRadioButton
             // 
             this.freeRadioButton.AutoSize = true;
-            this.freeRadioButton.Location = new System.Drawing.Point(10, 58);
-            this.freeRadioButton.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            this.freeRadioButton.Location = new System.Drawing.Point(7, 38);
             this.freeRadioButton.Name = "freeRadioButton";
-            this.freeRadioButton.Size = new System.Drawing.Size(141, 24);
+            this.freeRadioButton.Size = new System.Drawing.Size(100, 17);
             this.freeRadioButton.TabIndex = 8;
             this.freeRadioButton.TabStop = true;
             this.freeRadioButton.Text = "Saatu ilmaiseksi";
@@ -158,10 +149,9 @@
             // secondhandPurchaseRadioButton
             // 
             this.secondhandPurchaseRadioButton.AutoSize = true;
-            this.secondhandPurchaseRadioButton.Location = new System.Drawing.Point(10, 94);
-            this.secondhandPurchaseRadioButton.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            this.secondhandPurchaseRadioButton.Location = new System.Drawing.Point(7, 61);
             this.secondhandPurchaseRadioButton.Name = "secondhandPurchaseRadioButton";
-            this.secondhandPurchaseRadioButton.Size = new System.Drawing.Size(157, 24);
+            this.secondhandPurchaseRadioButton.Size = new System.Drawing.Size(111, 17);
             this.secondhandPurchaseRadioButton.TabIndex = 9;
             this.secondhandPurchaseRadioButton.TabStop = true;
             this.secondhandPurchaseRadioButton.Text = "Ostettu käytettynä";
@@ -169,10 +159,9 @@
             // 
             // viewButton
             // 
-            this.viewButton.Location = new System.Drawing.Point(39, 60);
-            this.viewButton.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            this.viewButton.Location = new System.Drawing.Point(26, 39);
             this.viewButton.Name = "viewButton";
-            this.viewButton.Size = new System.Drawing.Size(126, 63);
+            this.viewButton.Size = new System.Drawing.Size(84, 41);
             this.viewButton.TabIndex = 10;
             this.viewButton.Text = "Katso listaa";
             this.viewButton.UseVisualStyleBackColor = true;
@@ -181,10 +170,9 @@
             // viewTossedListRadioButton
             // 
             this.viewTossedListRadioButton.AutoSize = true;
-            this.viewTossedListRadioButton.Location = new System.Drawing.Point(226, 60);
-            this.viewTossedListRadioButton.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            this.viewTossedListRadioButton.Location = new System.Drawing.Point(151, 39);
             this.viewTossedListRadioButton.Name = "viewTossedListRadioButton";
-            this.viewTossedListRadioButton.Size = new System.Drawing.Size(132, 24);
+            this.viewTossedListRadioButton.Size = new System.Drawing.Size(96, 17);
             this.viewTossedListRadioButton.TabIndex = 11;
             this.viewTossedListRadioButton.TabStop = true;
             this.viewTossedListRadioButton.Text = "Siivotut tavarat";
@@ -194,10 +182,9 @@
             // viewAcquiredListRadioButton
             // 
             this.viewAcquiredListRadioButton.AutoSize = true;
-            this.viewAcquiredListRadioButton.Location = new System.Drawing.Point(226, 97);
-            this.viewAcquiredListRadioButton.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            this.viewAcquiredListRadioButton.Location = new System.Drawing.Point(151, 63);
             this.viewAcquiredListRadioButton.Name = "viewAcquiredListRadioButton";
-            this.viewAcquiredListRadioButton.Size = new System.Drawing.Size(140, 24);
+            this.viewAcquiredListRadioButton.Size = new System.Drawing.Size(101, 17);
             this.viewAcquiredListRadioButton.TabIndex = 12;
             this.viewAcquiredListRadioButton.TabStop = true;
             this.viewAcquiredListRadioButton.Text = "Hankitut tavarat";
@@ -209,11 +196,9 @@
             this.tossedTypeGroupBox.Controls.Add(this.thrownAwayRadioButton);
             this.tossedTypeGroupBox.Controls.Add(this.charityRadioButton);
             this.tossedTypeGroupBox.Controls.Add(this.soldRadioButton);
-            this.tossedTypeGroupBox.Location = new System.Drawing.Point(54, 178);
-            this.tossedTypeGroupBox.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            this.tossedTypeGroupBox.Location = new System.Drawing.Point(36, 116);
             this.tossedTypeGroupBox.Name = "tossedTypeGroupBox";
-            this.tossedTypeGroupBox.Padding = new System.Windows.Forms.Padding(4, 5, 4, 5);
-            this.tossedTypeGroupBox.Size = new System.Drawing.Size(168, 138);
+            this.tossedTypeGroupBox.Size = new System.Drawing.Size(112, 90);
             this.tossedTypeGroupBox.TabIndex = 13;
             this.tossedTypeGroupBox.TabStop = false;
             this.tossedTypeGroupBox.Text = "Mihin nakkasit?";
@@ -224,11 +209,9 @@
             this.acquiredTypeGroupBox.Controls.Add(this.newPurchaseRadioButton);
             this.acquiredTypeGroupBox.Controls.Add(this.secondhandPurchaseRadioButton);
             this.acquiredTypeGroupBox.Controls.Add(this.freeRadioButton);
-            this.acquiredTypeGroupBox.Location = new System.Drawing.Point(242, 178);
-            this.acquiredTypeGroupBox.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            this.acquiredTypeGroupBox.Location = new System.Drawing.Point(161, 116);
             this.acquiredTypeGroupBox.Name = "acquiredTypeGroupBox";
-            this.acquiredTypeGroupBox.Padding = new System.Windows.Forms.Padding(4, 5, 4, 5);
-            this.acquiredTypeGroupBox.Size = new System.Drawing.Size(194, 138);
+            this.acquiredTypeGroupBox.Size = new System.Drawing.Size(129, 90);
             this.acquiredTypeGroupBox.TabIndex = 14;
             this.acquiredTypeGroupBox.TabStop = false;
             this.acquiredTypeGroupBox.Text = "Miten hankit?";
@@ -239,19 +222,17 @@
             this.chooseViewGroupBox.Controls.Add(this.viewTossedListRadioButton);
             this.chooseViewGroupBox.Controls.Add(this.viewButton);
             this.chooseViewGroupBox.Controls.Add(this.viewAcquiredListRadioButton);
-            this.chooseViewGroupBox.Location = new System.Drawing.Point(54, 351);
-            this.chooseViewGroupBox.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            this.chooseViewGroupBox.Location = new System.Drawing.Point(36, 228);
             this.chooseViewGroupBox.Name = "chooseViewGroupBox";
-            this.chooseViewGroupBox.Padding = new System.Windows.Forms.Padding(4, 5, 4, 5);
-            this.chooseViewGroupBox.Size = new System.Drawing.Size(422, 172);
+            this.chooseViewGroupBox.Size = new System.Drawing.Size(281, 112);
             this.chooseViewGroupBox.TabIndex = 15;
             this.chooseViewGroupBox.TabStop = false;
             // 
             // MainForm
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 20F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(626, 572);
+            this.ClientSize = new System.Drawing.Size(417, 372);
             this.Controls.Add(this.chooseViewGroupBox);
             this.Controls.Add(this.acquiredTypeGroupBox);
             this.Controls.Add(this.tossedTypeGroupBox);
@@ -259,7 +240,6 @@
             this.Controls.Add(this.tossedRadioButton);
             this.Controls.Add(this.addButton);
             this.Controls.Add(this.textBox1);
-            this.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.Name = "MainForm";
             this.Text = "Siivoussovellus";
             this.FormClosing += new System.Windows.Forms.FormClosingEventHandler(this.MainForm_FormClosing);

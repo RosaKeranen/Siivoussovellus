@@ -149,7 +149,7 @@ namespace SiivoApp
                // Tallentaa listat tässä vaiheessa, jotta käyttäjä näkee ajantasalla olevan tilanteen
                 Save();
 
-                // Avaa ormin, jos viewAcquiredListRadioButton on valittuna
+                // Avaa formin, jos viewAcquiredListRadioButton on valittuna
                 AcquiredForm form1 = new AcquiredForm();
                 form1.Show();
             }
@@ -165,7 +165,7 @@ namespace SiivoApp
             else
             {
                 // Käyttäjä ei ole valinnut mitään radiobuttonia
-                MessageBox.Show("Valitse jokin vaihtoehto ennen kuin jatkat.");
+                MessageBox.Show("Valitse joko siivotut-lista tai hankitut-lista.");
             }
         }
 
