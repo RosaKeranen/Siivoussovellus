@@ -73,10 +73,13 @@ namespace SiivoApp
                 newPurchase.RemoveAt(selectedIndex);
                 //päivitä tiedosto
                 fileHelper.WriteToFile(newPurchaseListFileName, newPurchase);
+                //Tyhjennä listBoxin sisältö
+                newPurchaseListBox.Items.Clear();
                 //Päivitä listBoxin sisältö
                 newPurchaseListBox.Items.AddRange(newPurchase.ToArray());
                 //päivitä laskuri
                 UpdateLabelCount();
+                
             }
 
         }

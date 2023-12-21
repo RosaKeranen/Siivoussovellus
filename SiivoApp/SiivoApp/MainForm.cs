@@ -73,7 +73,7 @@ namespace SiivoApp
                 soldRadioButton.Checked = false;
                 acquiredTypeGroupBox.Enabled = true;
                 tossedTypeGroupBox.Enabled = false;
-                addButton.Enabled=true;
+                addButton.Enabled = true;
             }
         }
 
