@@ -61,6 +61,40 @@ namespace SiivoApp
             //Käyttäjä voi valita vain yhden asian kerrallaan.
             //Klikkauksen jälkeen ohjelma näyttää viestin: "Haluatko varmasti poistaa?" Viestilaatikoista voi valita kyllä tai ei.
             //Jos käyttäjä klikkaa viestilaatikossa kyllä, valittu asia poistetaan listBoxista ja tiedostosta. Jos klikkaa ei, mitään ei poisteta.
+
+            //If newPurchaseListBox on aktiivisena, silloin tee näin bla bla... else if freeListBox on aktiivisena, tee näin bla...
+            //else tee viimeiselle listBoxille myös samat hommat.
+
+            int selectedIndex = newPurchaseListBox.SelectedIndex;
+
+            if (selectedIndex >= 0)
+            {
+                //Poistaa newPurchase-boxin valitusta indeksistä
+                newPurchase.RemoveAt(selectedIndex);
+                //päivitä tiedosto
+                fileHelper.WriteToFile(newPurchaseListFileName, newPurchase);
+                //Päivitä listBoxin sisältö
+                newPurchaseListBox.Items.AddRange(newPurchase.ToArray());
+                //päivitä laskuri
+                UpdateLabelCount();
+            }
+
         }
+
+        //private void Save()
+
+        //{
+            //Tietojen tallennus tiedostoon, jokaiselle listalle on oma tiedosto
+            //fileHelper.WriteToFile(newPurchaseListFileName, newPurchase);
+            //fileHelper.WriteToFile(freeListFileName, free);
+            //fileHelper.WriteToFile(secondhandListFileName, secondhand);
+        //}
+
+        //private void UpdateListBox()
+       // {
+            //
+            //freeListBox.Items.AddRange(free.ToArray());
+            //secondhandListBox.Items.AddRange(secondhand.ToArray());
+        //}
     }
 }
