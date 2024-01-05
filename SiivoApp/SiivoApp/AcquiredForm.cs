@@ -58,18 +58,20 @@ namespace SiivoApp
         {
             //Tässä käyttäjä voisi valita listBoxissa olevia asioita klikkaamalla ja poistaa ne delete-napilla.
             //Käyttäjä voi valita vain yhden asian kerrallaan.
-            //Klikkauksen jälkeen ohjelma näyttää viestin: "Haluatko varmasti poistaa?" Viestilaatikoista voi valita kyllä tai ei.
+            //Klikkauksen jälkeen ohjelma näyttää viestin: "Haluatko varmasti poistaa?" Viestilaatikoista voi valita kyllä tai ei. No tätä ei ole vielä...
             //Jos käyttäjä klikkaa viestilaatikossa kyllä, valittu asia poistetaan listBoxista ja tiedostosta. Jos klikkaa ei, mitään ei poisteta.
 
             //If newPurchaseListBox on aktiivisena, silloin tee näin bla bla... else if freeListBox on aktiivisena, tee näin bla...
             //else tee viimeiselle listBoxille myös samat hommat.
 
-            int selectedIndex = newPurchaseListBox.SelectedIndex;
+            int newPurchaseSelectedIndex = newPurchaseListBox.SelectedIndex;
+            int freeSelectedIndex = freeListBox.SelectedIndex;
+            int secondhandSelectedIndex = secondhandListBox.SelectedIndex;
 
-            if (selectedIndex >= 0)
+            if (newPurchaseSelectedIndex > -1)
             {
                 //Poistaa newPurchase-boxin valitusta indeksistä
-                newPurchaseListBox.Items.RemoveAt(selectedIndex);
+                newPurchaseListBox.Items.RemoveAt(newPurchaseSelectedIndex);
                 //Muuttaa listBoxista tulevan ObjectCollectionin list-muotoon
                 List<ItemListRow> newPurchase = new List<ItemListRow>();
                 ItemListRow[] array = new ItemListRow[newPurchaseListBox.Items.Count];
@@ -77,31 +79,38 @@ namespace SiivoApp
                 newPurchase.AddRange(array);
                 //päivittää tiedoston
                 fileHelper.WriteToFile(newPurchaseListFileName, newPurchase);
-                ////Tyhjennä listBoxin sisältö
-                //newPurchaseListBox.Items.Clear();
-                ////Päivitä listBoxin sisältö
-                //newPurchaseListBox.Items.AddRange(newPurchase.ToArray());
                 //päivitä laskuri
                 UpdateLabelCount();
-                
+            }
+            else if (freeSelectedIndex > -1)
+            {
+                //Poistaa free-boxin valitusta indeksistä
+                freeListBox.Items.RemoveAt(freeSelectedIndex);
+                //Muuttaa listBoxista tulevan ObjectCollectionin list-muotoon
+                List<ItemListRow> free = new List<ItemListRow>();
+                ItemListRow[] array = new ItemListRow[freeListBox.Items.Count];
+                freeListBox.Items.CopyTo(array, 0);
+                free.AddRange(array);
+                //päivittää tiedoston
+                fileHelper.WriteToFile(freeListFileName, free);
+                //päivitä laskuri
+                UpdateLabelCount();
+            }
+            else if (secondhandSelectedIndex > -1)
+            {
+                //Poistaa secondhand-boxin valitusta indeksistä
+                secondhandListBox.Items.RemoveAt(secondhandSelectedIndex);
+                //Muuttaa listBoxista tulevan ObjectCollectionin list-muotoon
+                List<ItemListRow> secondhand = new List<ItemListRow>();
+                ItemListRow[] array = new ItemListRow[secondhandListBox.Items.Count];
+                secondhandListBox.Items.CopyTo(array, 0);
+                secondhand.AddRange(array);
+                //päivittää tiedoston
+                fileHelper.WriteToFile(secondhandListFileName, secondhand);
+                //päivitä laskuri
+                UpdateLabelCount();
             }
 
         }
-
-        //private void Save()
-
-        //{
-            //Tietojen tallennus tiedostoon, jokaiselle listalle on oma tiedosto
-            //fileHelper.WriteToFile(newPurchaseListFileName, newPurchase);
-            //fileHelper.WriteToFile(freeListFileName, free);
-            //fileHelper.WriteToFile(secondhandListFileName, secondhand);
-        //}
-
-        //private void UpdateListBox()
-       // {
-            //
-            //freeListBox.Items.AddRange(free.ToArray());
-            //secondhandListBox.Items.AddRange(secondhand.ToArray());
-        //}
     }
 }

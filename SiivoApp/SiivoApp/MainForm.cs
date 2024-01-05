@@ -85,7 +85,7 @@ namespace SiivoApp
                 // Tässä asia lisätään Heitetty pois -listalle
                 thrownAway = fileHelper.ReadFromFile(thrownAwayListFileName);
                 thrownAway.Add(new ItemListRow(textBox1.Text));
-                Save();
+                fileHelper.WriteToFile(thrownAwayListFileName, thrownAway);
                 MessageBox.Show("Lisäsit asian Heitetty pois -listalle!");
                 textBox1.Clear();
             }
@@ -94,7 +94,7 @@ namespace SiivoApp
                 //Tässä asia lisätään Annettu pois -listalle
                 charity = fileHelper.ReadFromFile(charityListFileName);
                 charity.Add(new ItemListRow(textBox1.Text));
-                Save();
+                fileHelper.WriteToFile(charityListFileName, charity);
                 MessageBox.Show("Lisäsit asian Annettu pois -listalle!");
                 textBox1.Clear();
             }
@@ -103,7 +103,7 @@ namespace SiivoApp
                 //Tässä asia lisätään Myyty -listalle
                 sold = fileHelper.ReadFromFile(soldListFileName);
                 sold.Add(new ItemListRow(textBox1.Text));
-                Save();
+                fileHelper.WriteToFile(soldListFileName, sold);
                 MessageBox.Show("Lisäsit asian Myyty -listalle!");
                 textBox1.Clear();
             }
@@ -112,7 +112,7 @@ namespace SiivoApp
                 //Tässä asia lisätään Ostettu uutena -listalle
                 newPurchase = fileHelper.ReadFromFile(newPurchaseListFileName);
                 newPurchase.Add(new ItemListRow(textBox1.Text));
-                Save();
+                fileHelper.WriteToFile(newPurchaseListFileName, newPurchase);
                 MessageBox.Show("Lisäsit asian Ostettu uutena -listalle!");
                 textBox1.Clear();
             }
@@ -121,7 +121,7 @@ namespace SiivoApp
                 //Tässä asia lisätään Saatu ilmaiseksi -listalle
                 free = fileHelper.ReadFromFile(freeListFileName);
                 free.Add(new ItemListRow(textBox1.Text));
-                Save();
+                fileHelper.WriteToFile(freeListFileName, free);
                 MessageBox.Show("Lisäsit asian Saatu ilmaiseksi -listalle!");
                 textBox1.Clear();
             }
@@ -130,7 +130,7 @@ namespace SiivoApp
                 //Tässä asia lisätään Ostettu käytettynä -listalle
                 secondhand = fileHelper.ReadFromFile(secondhandListFileName);
                 secondhand.Add(new ItemListRow(textBox1.Text));
-                Save();
+                fileHelper.WriteToFile(secondhandListFileName, secondhand);
                 MessageBox.Show("Lisäsit asian Ostettu käytettynä -listalle!");
                 textBox1.Clear();
             }
