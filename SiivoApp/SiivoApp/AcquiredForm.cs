@@ -15,9 +15,7 @@ namespace SiivoApp
 {
     public partial class AcquiredForm : Form
     {
-        private List<ItemListRow> newPurchase;
-        private List<ItemListRow> free;
-        private List<ItemListRow> secondhand;
+
 
         private FileHelper fileHelper = new FileHelper();
 
@@ -29,25 +27,26 @@ namespace SiivoApp
         {
             InitializeComponent();
 
-            newPurchase = fileHelper.ReadFromFile(newPurchaseListFileName);
-            free = fileHelper.ReadFromFile(freeListFileName);
-            secondhand = fileHelper.ReadFromFile(secondhandListFileName);
+            //Lukee fileHelperin avulla datan tiedostosta, muuntaa sen listBoxia varten ToArray-metodilla arrayksi ja lisää AddRange-metodilla listBoxiin
+            newPurchaseListBox.Items.AddRange(fileHelper.ReadFromFile(newPurchaseListFileName).ToArray());
+            freeListBox.Items.AddRange(fileHelper.ReadFromFile(freeListFileName).ToArray());
+            secondhandListBox.Items.AddRange(fileHelper.ReadFromFile(secondhandListFileName).ToArray());
         }
 
         private void AcquiredForm_Load(object sender, EventArgs e)
         {
-            newPurchaseListBox.Items.AddRange(newPurchase.ToArray());
-            freeListBox.Items.AddRange(free.ToArray());
-            secondhandListBox.Items.AddRange(secondhand.ToArray());
+            //newPurchaseListBox.Items.AddRange(newPurchase.ToArray());
+            //freeListBox.Items.AddRange(free.ToArray());
+            //secondhandListBox.Items.AddRange(secondhand.ToArray());
 
             UpdateLabelCount();
         }
 
         public void UpdateLabelCount()
         {
-            newPurchaseCountLabel.Text = $"Uutena ostettuja yhteensä: {newPurchase.Count} kpl";
-            freeCountLabel.Text = $"Ilmaiseksi saatuja yhteensä: {free.Count} kpl";
-            secondhandCountLabel.Text = $"Käytettynä ostettuja yhteensä: {secondhand.Count} kpl";
+            newPurchaseCountLabel.Text = $"Uutena ostettuja yhteensä: {newPurchaseListBox.Items.Count} kpl";
+            freeCountLabel.Text = $"Ilmaiseksi saatuja yhteensä: {freeListBox.Items.Count} kpl";
+            secondhandCountLabel.Text = $"Käytettynä ostettuja yhteensä: {secondhandListBox.Items.Count} kpl";
         }
 
         private void newPurchaseCountLabel_Click(object sender, EventArgs e)
@@ -70,13 +69,18 @@ namespace SiivoApp
             if (selectedIndex >= 0)
             {
                 //Poistaa newPurchase-boxin valitusta indeksistä
-                newPurchase.RemoveAt(selectedIndex);
-                //päivitä tiedosto
+                newPurchaseListBox.Items.RemoveAt(selectedIndex);
+                //Muuttaa listBoxista tulevan ObjectCollectionin list-muotoon
+                List<ItemListRow> newPurchase = new List<ItemListRow>();
+                ItemListRow[] array = new ItemListRow[newPurchaseListBox.Items.Count];
+                newPurchaseListBox.Items.CopyTo(array, 0);
+                newPurchase.AddRange(array);
+                //päivittää tiedoston
                 fileHelper.WriteToFile(newPurchaseListFileName, newPurchase);
-                //Tyhjennä listBoxin sisältö
-                newPurchaseListBox.Items.Clear();
-                //Päivitä listBoxin sisältö
-                newPurchaseListBox.Items.AddRange(newPurchase.ToArray());
+                ////Tyhjennä listBoxin sisältö
+                //newPurchaseListBox.Items.Clear();
+                ////Päivitä listBoxin sisältö
+                //newPurchaseListBox.Items.AddRange(newPurchase.ToArray());
                 //päivitä laskuri
                 UpdateLabelCount();
                 

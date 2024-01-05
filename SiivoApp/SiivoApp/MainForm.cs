@@ -83,42 +83,54 @@ namespace SiivoApp
             if (thrownAwayRadioButton.Checked)
             {
                 // Tässä asia lisätään Heitetty pois -listalle
+                thrownAway = fileHelper.ReadFromFile(thrownAwayListFileName);
                 thrownAway.Add(new ItemListRow(textBox1.Text));
+                Save();
                 MessageBox.Show("Lisäsit asian Heitetty pois -listalle!");
                 textBox1.Clear();
             }
             else if (charityRadioButton.Checked)
             {
                 //Tässä asia lisätään Annettu pois -listalle
+                charity = fileHelper.ReadFromFile(charityListFileName);
                 charity.Add(new ItemListRow(textBox1.Text));
+                Save();
                 MessageBox.Show("Lisäsit asian Annettu pois -listalle!");
                 textBox1.Clear();
             }
             else if (soldRadioButton.Checked)
             {
                 //Tässä asia lisätään Myyty -listalle
+                sold = fileHelper.ReadFromFile(soldListFileName);
                 sold.Add(new ItemListRow(textBox1.Text));
+                Save();
                 MessageBox.Show("Lisäsit asian Myyty -listalle!");
                 textBox1.Clear();
             }
             else if (newPurchaseRadioButton.Checked)
             {
                 //Tässä asia lisätään Ostettu uutena -listalle
+                newPurchase = fileHelper.ReadFromFile(newPurchaseListFileName);
                 newPurchase.Add(new ItemListRow(textBox1.Text));
+                Save();
                 MessageBox.Show("Lisäsit asian Ostettu uutena -listalle!");
                 textBox1.Clear();
             }
             else if (freeRadioButton.Checked)
             {
                 //Tässä asia lisätään Saatu ilmaiseksi -listalle
+                free = fileHelper.ReadFromFile(freeListFileName);
                 free.Add(new ItemListRow(textBox1.Text));
+                Save();
                 MessageBox.Show("Lisäsit asian Saatu ilmaiseksi -listalle!");
                 textBox1.Clear();
             }
             else if (secondhandPurchaseRadioButton.Checked)
             {
                 //Tässä asia lisätään Ostettu käytettynä -listalle
+                secondhand = fileHelper.ReadFromFile(secondhandListFileName);
                 secondhand.Add(new ItemListRow(textBox1.Text));
+                Save();
                 MessageBox.Show("Lisäsit asian Ostettu käytettynä -listalle!");
                 textBox1.Clear();
             }
@@ -146,18 +158,12 @@ namespace SiivoApp
             // Tarkistus, kumpi radiobutton on valittuna
             if (viewAcquiredListRadioButton.Checked)
             {
-               // Tallentaa listat tässä vaiheessa, jotta käyttäjä näkee ajantasalla olevan tilanteen
-                Save();
-
                 // Avaa formin, jos viewAcquiredListRadioButton on valittuna
                 AcquiredForm form1 = new AcquiredForm();
                 form1.Show();
             }
             else if (viewTossedListRadioButton.Checked)
             {
-                // Tallentaa listat tässä vaiheessa, jotta käyttäjä näkee ajantasalla olevan tilanteen
-                Save();
-
                 // Avaa Siivottujen asioiden formin, jos viewTossedListRadioButton on valittuna
                 TossedForm form2 = new TossedForm();
                 form2.Show();
@@ -186,7 +192,7 @@ namespace SiivoApp
 
         private void MainForm_FormClosing(object sender, FormClosingEventArgs e)
         {
-            Save();
+         
         }
 
         private void Save()
