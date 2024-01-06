@@ -31,6 +31,49 @@ namespace SiivoApp
             newPurchaseListBox.Items.AddRange(fileHelper.ReadFromFile(newPurchaseListFileName).ToArray());
             freeListBox.Items.AddRange(fileHelper.ReadFromFile(freeListFileName).ToArray());
             secondhandListBox.Items.AddRange(fileHelper.ReadFromFile(secondhandListFileName).ToArray());
+
+            // Lisää tapahtumankäsittelijät listboxeille
+            newPurchaseListBox.SelectedIndexChanged += ListBox_SelectedIndexChanged;
+            freeListBox.SelectedIndexChanged += ListBox_SelectedIndexChanged;
+            secondhandListBox.SelectedIndexChanged += ListBox_SelectedIndexChanged;
+        }
+
+        //Updating tehtävä on blokata eventit joita seuraa clearSelected hommista
+        bool updating = false;
+        // Lisää luokkaan muuttuja, joka säilyttää aikaisemmin valitun indeksin
+        private object previouslySelectedObject = null;
+        private void ListBox_SelectedIndexChanged(object sender, EventArgs e)
+        {
+            if (updating) return;
+            
+            // Hae valitun listboxin viittaus
+            ListBox selectedListBox = (ListBox)sender;
+
+            // Tarkista, onko käyttäjä klikannut samaa kohdetta uudelleen
+            if (selectedListBox.SelectedIndex != -1 && selectedListBox.SelectedItem == previouslySelectedObject)
+            {
+                // Jos kohdetta klikattiin uudelleen, poista valinta
+                selectedListBox.ClearSelected();
+                previouslySelectedObject = null; // Nollaa muuttuja
+            }
+            else
+            {
+                updating = true;
+                // Käy läpi kaikki listboxit
+                foreach (Control control in Controls)
+                {
+                    if (control is ListBox listBox && listBox != selectedListBox)
+                    {
+                        // Tyhjennä valinnat muista listboxeista
+                        listBox.ClearSelected();
+                    }
+                }
+
+                updating = false;
+            }
+
+            // Päivitä aikaisemmin valittu indeksi
+            previouslySelectedObject = selectedListBox.SelectedItem;
         }
 
         private void AcquiredForm_Load(object sender, EventArgs e)
@@ -63,6 +106,7 @@ namespace SiivoApp
 
             //If newPurchaseListBox on aktiivisena, silloin tee näin bla bla... else if freeListBox on aktiivisena, tee näin bla...
             //else tee viimeiselle listBoxille myös samat hommat.
+
 
             int newPurchaseSelectedIndex = newPurchaseListBox.SelectedIndex;
             int freeSelectedIndex = freeListBox.SelectedIndex;
