@@ -80,6 +80,12 @@ namespace SiivoApp
         // Tässä klikataan Lisää listalle -nappia
         private void addButton_Click(object sender, EventArgs e)
         {
+            if (textBox1.Text.Trim().Length == 0)
+            {
+                MessageBox.Show("Kirjoita listalle lisättävä asia.");
+                return;
+            }
+
             if (thrownAwayRadioButton.Checked)
             {
                 // Tässä asia lisätään Heitetty pois -listalle
