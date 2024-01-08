@@ -80,6 +80,8 @@ namespace SiivoApp
         // Tässä klikataan Lisää listalle -nappia
         private void addButton_Click(object sender, EventArgs e)
         {
+            //Käyttäjää estetään lisäämästä listalle tyhjää, mikäli textbox on tyhjä ja menee klikkaamaan lisää listalle -nappia
+            //Messagebox muistuttaa lisäämään tekstiä ennen napin klikkausta
             if (textBox1.Text.Trim().Length == 0)
             {
                 MessageBox.Show("Kirjoita listalle lisättävä asia.");
@@ -148,23 +150,13 @@ namespace SiivoApp
 
         }
 
-        private void viewAcquiredListRadioButton_CheckedChanged(object sender, EventArgs e)
-        {
-
-        }
-
-        private void viewTossedListRadioButton_CheckedChanged(object sender, EventArgs e)
-        {
-
-        }
-
         // Tässä klikataan Katso listaa -nappia
         private void viewButton_Click(object sender, EventArgs e)
         {
             // Tarkistus, kumpi radiobutton on valittuna
             if (viewAcquiredListRadioButton.Checked)
             {
-                // Avaa formin, jos viewAcquiredListRadioButton on valittuna
+                // Avaa Hankittujen asioiden formin, jos viewAcquiredListRadioButton on valittuna
                 AcquiredForm form1 = new AcquiredForm();
                 form1.Show();
             }
@@ -179,21 +171,6 @@ namespace SiivoApp
                 // Käyttäjä ei ole valinnut mitään radiobuttonia
                 MessageBox.Show("Valitse joko siivotut-lista tai hankitut-lista.");
             }
-        }
-
-        private void tossedTypeGroupBox_Enter(object sender, EventArgs e)
-        {
-         
-        }
-
-        private void acquiredTypeGroupBox_Enter(object sender, EventArgs e)
-        {
-
-        }
-
-        private void textBox1_TextChanged(object sender, EventArgs e)
-        {
-
         }
 
         private void MainForm_FormClosing(object sender, FormClosingEventArgs e)

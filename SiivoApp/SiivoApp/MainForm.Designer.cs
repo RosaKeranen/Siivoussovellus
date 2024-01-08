@@ -55,7 +55,6 @@
             this.textBox1.Name = "textBox1";
             this.textBox1.Size = new System.Drawing.Size(269, 20);
             this.textBox1.TabIndex = 0;
-            this.textBox1.TextChanged += new System.EventHandler(this.textBox1_TextChanged);
             // 
             // addButton
             // 
@@ -177,7 +176,6 @@
             this.viewTossedListRadioButton.TabStop = true;
             this.viewTossedListRadioButton.Text = "Siivotut tavarat";
             this.viewTossedListRadioButton.UseVisualStyleBackColor = true;
-            this.viewTossedListRadioButton.CheckedChanged += new System.EventHandler(this.viewTossedListRadioButton_CheckedChanged);
             // 
             // viewAcquiredListRadioButton
             // 
@@ -189,7 +187,6 @@
             this.viewAcquiredListRadioButton.TabStop = true;
             this.viewAcquiredListRadioButton.Text = "Hankitut tavarat";
             this.viewAcquiredListRadioButton.UseVisualStyleBackColor = true;
-            this.viewAcquiredListRadioButton.CheckedChanged += new System.EventHandler(this.viewAcquiredListRadioButton_CheckedChanged);
             // 
             // tossedTypeGroupBox
             // 
@@ -202,7 +199,6 @@
             this.tossedTypeGroupBox.TabIndex = 13;
             this.tossedTypeGroupBox.TabStop = false;
             this.tossedTypeGroupBox.Text = "Mihin nakkasit?";
-            this.tossedTypeGroupBox.Enter += new System.EventHandler(this.tossedTypeGroupBox_Enter);
             // 
             // acquiredTypeGroupBox
             // 
@@ -215,7 +211,6 @@
             this.acquiredTypeGroupBox.TabIndex = 14;
             this.acquiredTypeGroupBox.TabStop = false;
             this.acquiredTypeGroupBox.Text = "Miten hankit?";
-            this.acquiredTypeGroupBox.Enter += new System.EventHandler(this.acquiredTypeGroupBox_Enter);
             // 
             // chooseViewGroupBox
             // 

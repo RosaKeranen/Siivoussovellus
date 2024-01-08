@@ -83,17 +83,11 @@ namespace SiivoApp
             soldCountLabel.Text = $"Myytyjä yhteensä: {soldListBox.Items.Count} kpl";
         }
 
+        //Poisto-nappia klikkaamalla käyttäjä voi poistaa yhden asian kerrallaan haluamaltaan listalta.
+        //Poistettavia asioita voi valita kerrallaan vain yhden.
+        //Valinnan voi tehdä tekemättömäksi klikkaamalla samaa sanaa uudestaan (tai klikkaamalla muualle listboxien alueelle)
         private void deleteTossedButton_Click(object sender, EventArgs e)
         {
-            //Tässä käyttäjä voisi valita listBoxissa olevia asioita klikkaamalla ja poistaa ne delete-napilla.
-            //Käyttäjä voi valita vain yhden asian kerrallaan.
-            //Klikkauksen jälkeen ohjelma näyttää viestin: "Haluatko varmasti poistaa?" Viestilaatikoista voi valita kyllä tai ei. No tätä ei ole vielä...
-            //Jos käyttäjä klikkaa viestilaatikossa kyllä, valittu asia poistetaan listBoxista ja tiedostosta. Jos klikkaa ei, mitään ei poisteta.
-
-            //If newPurchaseListBox on aktiivisena, silloin tee näin bla bla... else if freeListBox on aktiivisena, tee näin bla...
-            //else tee viimeiselle listBoxille myös samat hommat.
-
-
             int thrownAwaySelectedIndex = thrownAwayListBox.SelectedIndex;
             int charitySelectedIndex = charityListBox.SelectedIndex;
             int soldSelectedIndex = soldListBox.SelectedIndex;
