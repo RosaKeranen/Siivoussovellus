@@ -134,7 +134,7 @@
             this.deleteTossedButton.Name = "deleteTossedButton";
             this.deleteTossedButton.Size = new System.Drawing.Size(91, 37);
             this.deleteTossedButton.TabIndex = 10;
-            this.deleteTossedButton.Text = "Delete";
+            this.deleteTossedButton.Text = "Poista";
             this.deleteTossedButton.UseVisualStyleBackColor = true;
             this.deleteTossedButton.Click += new System.EventHandler(this.deleteTossedButton_Click);
             // 
@@ -142,7 +142,7 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(800, 450);
+            this.ClientSize = new System.Drawing.Size(794, 478);
             this.Controls.Add(this.deleteTossedButton);
             this.Controls.Add(this.soldCountLabel);
             this.Controls.Add(this.charityCountLabel);
@@ -154,6 +154,7 @@
             this.Controls.Add(this.soldListBox);
             this.Controls.Add(this.charityListBox);
             this.Controls.Add(this.thrownAwayListBox);
+            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedDialog;
             this.Name = "TossedForm";
             this.Text = "Siivotut asiat";
             this.Load += new System.EventHandler(this.TossedForm_Load);

@@ -51,6 +51,7 @@
             // 
             // secondhandListBox
             // 
+            this.secondhandListBox.BackColor = System.Drawing.SystemColors.Window;
             this.secondhandListBox.FormattingEnabled = true;
             this.secondhandListBox.Location = new System.Drawing.Point(493, 110);
             this.secondhandListBox.Name = "secondhandListBox";
@@ -135,7 +136,7 @@
             this.acquiredDeleteButton.Name = "acquiredDeleteButton";
             this.acquiredDeleteButton.Size = new System.Drawing.Size(91, 37);
             this.acquiredDeleteButton.TabIndex = 10;
-            this.acquiredDeleteButton.Text = "Delete";
+            this.acquiredDeleteButton.Text = "Poista";
             this.acquiredDeleteButton.UseVisualStyleBackColor = true;
             this.acquiredDeleteButton.Click += new System.EventHandler(this.acquiredDeleteButton_Click);
             // 
@@ -143,7 +144,7 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(800, 450);
+            this.ClientSize = new System.Drawing.Size(803, 471);
             this.Controls.Add(this.acquiredDeleteButton);
             this.Controls.Add(this.secondhandCountLabel);
             this.Controls.Add(this.freeCountLabel);
@@ -155,6 +156,7 @@
             this.Controls.Add(this.freeListBox);
             this.Controls.Add(this.secondhandListBox);
             this.Controls.Add(this.newPurchaseListBox);
+            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedDialog;
             this.Name = "AcquiredForm";
             this.Text = "Hankitut asiat";
             this.Load += new System.EventHandler(this.AcquiredForm_Load);

@@ -227,6 +227,7 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.BackColor = System.Drawing.SystemColors.Control;
             this.ClientSize = new System.Drawing.Size(417, 372);
             this.Controls.Add(this.chooseViewGroupBox);
             this.Controls.Add(this.acquiredTypeGroupBox);
@@ -235,6 +236,7 @@
             this.Controls.Add(this.tossedRadioButton);
             this.Controls.Add(this.addButton);
             this.Controls.Add(this.textBox1);
+            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedDialog;
             this.Name = "MainForm";
             this.Text = "Siivoussovellus";
             this.FormClosing += new System.Windows.Forms.FormClosingEventHandler(this.MainForm_FormClosing);

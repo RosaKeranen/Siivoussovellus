@@ -80,7 +80,7 @@ namespace SiivoApp
         // Tässä klikataan Lisää listalle -nappia
         private void addButton_Click(object sender, EventArgs e)
         {
-            //Käyttäjää estetään lisäämästä listalle tyhjää, mikäli textbox on tyhjä ja menee klikkaamaan lisää listalle -nappia
+            //Käyttäjää estetään lisäämästä listalle tyhjää, mikäli käyttäjä klikkaa lisää listalle -nappia ja textbox on tyhjä
             //Messagebox muistuttaa lisäämään tekstiä ennen napin klikkausta
             if (textBox1.Text.Trim().Length == 0)
             {
