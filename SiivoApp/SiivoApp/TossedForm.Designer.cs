@@ -77,9 +77,10 @@
             // tossedViewLabel
             // 
             this.tossedViewLabel.AutoSize = true;
-            this.tossedViewLabel.Location = new System.Drawing.Point(323, 31);
+            this.tossedViewLabel.Font = new System.Drawing.Font("Segoe UI Semibold", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.tossedViewLabel.Location = new System.Drawing.Point(296, 32);
             this.tossedViewLabel.Name = "tossedViewLabel";
-            this.tossedViewLabel.Size = new System.Drawing.Size(67, 13);
+            this.tossedViewLabel.Size = new System.Drawing.Size(123, 25);
             this.tossedViewLabel.TabIndex = 4;
             this.tossedViewLabel.Text = "Siivotut asiat";
             // 

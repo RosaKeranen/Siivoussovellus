@@ -43,71 +43,83 @@
             // 
             // newPurchaseListBox
             // 
+            this.newPurchaseListBox.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.newPurchaseListBox.FormattingEnabled = true;
+            this.newPurchaseListBox.ItemHeight = 15;
             this.newPurchaseListBox.Location = new System.Drawing.Point(21, 132);
             this.newPurchaseListBox.Name = "newPurchaseListBox";
-            this.newPurchaseListBox.Size = new System.Drawing.Size(213, 251);
+            this.newPurchaseListBox.Size = new System.Drawing.Size(213, 244);
             this.newPurchaseListBox.TabIndex = 0;
             // 
             // secondhandListBox
             // 
             this.secondhandListBox.BackColor = System.Drawing.SystemColors.Window;
+            this.secondhandListBox.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.secondhandListBox.FormattingEnabled = true;
+            this.secondhandListBox.ItemHeight = 15;
             this.secondhandListBox.Location = new System.Drawing.Point(492, 132);
             this.secondhandListBox.Name = "secondhandListBox";
-            this.secondhandListBox.Size = new System.Drawing.Size(213, 251);
+            this.secondhandListBox.Size = new System.Drawing.Size(213, 244);
             this.secondhandListBox.TabIndex = 1;
             // 
             // freeListBox
             // 
+            this.freeListBox.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.freeListBox.FormattingEnabled = true;
+            this.freeListBox.ItemHeight = 15;
             this.freeListBox.Location = new System.Drawing.Point(254, 132);
             this.freeListBox.Name = "freeListBox";
-            this.freeListBox.Size = new System.Drawing.Size(213, 251);
+            this.freeListBox.Size = new System.Drawing.Size(213, 244);
             this.freeListBox.TabIndex = 2;
             // 
             // acquiredViewLabel
             // 
             this.acquiredViewLabel.AutoSize = true;
-            this.acquiredViewLabel.Location = new System.Drawing.Point(323, 31);
+            this.acquiredViewLabel.Font = new System.Drawing.Font("Segoe UI Semibold", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.acquiredViewLabel.Location = new System.Drawing.Point(292, 27);
             this.acquiredViewLabel.Name = "acquiredViewLabel";
-            this.acquiredViewLabel.Size = new System.Drawing.Size(72, 13);
+            this.acquiredViewLabel.Size = new System.Drawing.Size(132, 25);
             this.acquiredViewLabel.TabIndex = 3;
             this.acquiredViewLabel.Text = "Hankitut asiat";
             // 
             // newPurchaseLabel
             // 
             this.newPurchaseLabel.AutoSize = true;
-            this.newPurchaseLabel.Location = new System.Drawing.Point(84, 93);
+            this.newPurchaseLabel.Font = new System.Drawing.Font("Segoe UI Semibold", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.newPurchaseLabel.ForeColor = System.Drawing.SystemColors.ControlText;
+            this.newPurchaseLabel.Location = new System.Drawing.Point(62, 93);
             this.newPurchaseLabel.Name = "newPurchaseLabel";
-            this.newPurchaseLabel.Size = new System.Drawing.Size(77, 13);
+            this.newPurchaseLabel.Size = new System.Drawing.Size(110, 20);
             this.newPurchaseLabel.TabIndex = 4;
             this.newPurchaseLabel.Text = "Ostettu uutena";
             // 
             // freeLabel
             // 
             this.freeLabel.AutoSize = true;
-            this.freeLabel.Location = new System.Drawing.Point(316, 93);
+            this.freeLabel.Font = new System.Drawing.Font("Segoe UI Semibold", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.freeLabel.Location = new System.Drawing.Point(293, 93);
             this.freeLabel.Name = "freeLabel";
-            this.freeLabel.Size = new System.Drawing.Size(82, 13);
+            this.freeLabel.Size = new System.Drawing.Size(116, 20);
             this.freeLabel.TabIndex = 5;
             this.freeLabel.Text = "Saatu ilmaiseksi";
             // 
             // secondhandLabel
             // 
             this.secondhandLabel.AutoSize = true;
-            this.secondhandLabel.Location = new System.Drawing.Point(555, 93);
+            this.secondhandLabel.Font = new System.Drawing.Font("Segoe UI Semibold", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.secondhandLabel.Location = new System.Drawing.Point(525, 93);
             this.secondhandLabel.Name = "secondhandLabel";
-            this.secondhandLabel.Size = new System.Drawing.Size(93, 13);
+            this.secondhandLabel.Size = new System.Drawing.Size(134, 20);
             this.secondhandLabel.TabIndex = 6;
             this.secondhandLabel.Text = "Ostettu käytettynä";
             // 
             // newPurchaseCountLabel
             // 
             this.newPurchaseCountLabel.AutoSize = true;
-            this.newPurchaseCountLabel.Location = new System.Drawing.Point(18, 396);
+            this.newPurchaseCountLabel.Font = new System.Drawing.Font("Segoe UI", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.newPurchaseCountLabel.Location = new System.Drawing.Point(27, 396);
             this.newPurchaseCountLabel.Name = "newPurchaseCountLabel";
-            this.newPurchaseCountLabel.Size = new System.Drawing.Size(143, 13);
+            this.newPurchaseCountLabel.Size = new System.Drawing.Size(158, 13);
             this.newPurchaseCountLabel.TabIndex = 7;
             this.newPurchaseCountLabel.Text = "Uutena ostettujen lukumäärä";
             this.newPurchaseCountLabel.Click += new System.EventHandler(this.newPurchaseCountLabel_Click);
@@ -115,23 +127,26 @@
             // freeCountLabel
             // 
             this.freeCountLabel.AutoSize = true;
-            this.freeCountLabel.Location = new System.Drawing.Point(251, 396);
+            this.freeCountLabel.Font = new System.Drawing.Font("Segoe UI", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.freeCountLabel.Location = new System.Drawing.Point(264, 396);
             this.freeCountLabel.Name = "freeCountLabel";
-            this.freeCountLabel.Size = new System.Drawing.Size(147, 13);
+            this.freeCountLabel.Size = new System.Drawing.Size(160, 13);
             this.freeCountLabel.TabIndex = 8;
             this.freeCountLabel.Text = "Ilmaiseksi saatujen lukumäärä";
             // 
             // secondhandCountLabel
             // 
             this.secondhandCountLabel.AutoSize = true;
-            this.secondhandCountLabel.Location = new System.Drawing.Point(490, 396);
+            this.secondhandCountLabel.Font = new System.Drawing.Font("Segoe UI", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.secondhandCountLabel.Location = new System.Drawing.Point(499, 396);
             this.secondhandCountLabel.Name = "secondhandCountLabel";
-            this.secondhandCountLabel.Size = new System.Drawing.Size(158, 13);
+            this.secondhandCountLabel.Size = new System.Drawing.Size(173, 13);
             this.secondhandCountLabel.TabIndex = 9;
             this.secondhandCountLabel.Text = "Käytettynä ostettujen lukumäärä";
             // 
             // acquiredDeleteButton
             // 
+            this.acquiredDeleteButton.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.acquiredDeleteButton.Location = new System.Drawing.Point(614, 438);
             this.acquiredDeleteButton.Name = "acquiredDeleteButton";
             this.acquiredDeleteButton.Size = new System.Drawing.Size(91, 37);

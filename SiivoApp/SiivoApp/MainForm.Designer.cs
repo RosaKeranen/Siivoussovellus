@@ -51,13 +51,15 @@
             // 
             // textBox1
             // 
+            this.textBox1.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.textBox1.Location = new System.Drawing.Point(36, 39);
             this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(269, 20);
+            this.textBox1.Size = new System.Drawing.Size(269, 23);
             this.textBox1.TabIndex = 0;
             // 
             // addButton
             // 
+            this.addButton.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.addButton.Location = new System.Drawing.Point(323, 33);
             this.addButton.Name = "addButton";
             this.addButton.Size = new System.Drawing.Size(82, 31);
@@ -171,10 +173,10 @@
             this.viewTossedListRadioButton.AutoSize = true;
             this.viewTossedListRadioButton.Location = new System.Drawing.Point(151, 39);
             this.viewTossedListRadioButton.Name = "viewTossedListRadioButton";
-            this.viewTossedListRadioButton.Size = new System.Drawing.Size(96, 17);
+            this.viewTossedListRadioButton.Size = new System.Drawing.Size(85, 17);
             this.viewTossedListRadioButton.TabIndex = 11;
             this.viewTossedListRadioButton.TabStop = true;
-            this.viewTossedListRadioButton.Text = "Siivotut tavarat";
+            this.viewTossedListRadioButton.Text = "Siivotut asiat";
             this.viewTossedListRadioButton.UseVisualStyleBackColor = true;
             // 
             // viewAcquiredListRadioButton
@@ -182,10 +184,10 @@
             this.viewAcquiredListRadioButton.AutoSize = true;
             this.viewAcquiredListRadioButton.Location = new System.Drawing.Point(151, 63);
             this.viewAcquiredListRadioButton.Name = "viewAcquiredListRadioButton";
-            this.viewAcquiredListRadioButton.Size = new System.Drawing.Size(101, 17);
+            this.viewAcquiredListRadioButton.Size = new System.Drawing.Size(90, 17);
             this.viewAcquiredListRadioButton.TabIndex = 12;
             this.viewAcquiredListRadioButton.TabStop = true;
-            this.viewAcquiredListRadioButton.Text = "Hankitut tavarat";
+            this.viewAcquiredListRadioButton.Text = "Hankitut asiat";
             this.viewAcquiredListRadioButton.UseVisualStyleBackColor = true;
             // 
             // tossedTypeGroupBox
