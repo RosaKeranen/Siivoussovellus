@@ -76,7 +76,7 @@
             // 
             this.acquiredViewLabel.AutoSize = true;
             this.acquiredViewLabel.Font = new System.Drawing.Font("Segoe UI Semibold", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.acquiredViewLabel.Location = new System.Drawing.Point(292, 27);
+            this.acquiredViewLabel.Location = new System.Drawing.Point(296, 32);
             this.acquiredViewLabel.Name = "acquiredViewLabel";
             this.acquiredViewLabel.Size = new System.Drawing.Size(132, 25);
             this.acquiredViewLabel.TabIndex = 3;
@@ -117,7 +117,7 @@
             // 
             this.newPurchaseCountLabel.AutoSize = true;
             this.newPurchaseCountLabel.Font = new System.Drawing.Font("Segoe UI", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.newPurchaseCountLabel.Location = new System.Drawing.Point(27, 396);
+            this.newPurchaseCountLabel.Location = new System.Drawing.Point(18, 396);
             this.newPurchaseCountLabel.Name = "newPurchaseCountLabel";
             this.newPurchaseCountLabel.Size = new System.Drawing.Size(158, 13);
             this.newPurchaseCountLabel.TabIndex = 7;
@@ -128,7 +128,7 @@
             // 
             this.freeCountLabel.AutoSize = true;
             this.freeCountLabel.Font = new System.Drawing.Font("Segoe UI", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.freeCountLabel.Location = new System.Drawing.Point(264, 396);
+            this.freeCountLabel.Location = new System.Drawing.Point(251, 396);
             this.freeCountLabel.Name = "freeCountLabel";
             this.freeCountLabel.Size = new System.Drawing.Size(160, 13);
             this.freeCountLabel.TabIndex = 8;
@@ -138,7 +138,7 @@
             // 
             this.secondhandCountLabel.AutoSize = true;
             this.secondhandCountLabel.Font = new System.Drawing.Font("Segoe UI", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.secondhandCountLabel.Location = new System.Drawing.Point(499, 396);
+            this.secondhandCountLabel.Location = new System.Drawing.Point(489, 396);
             this.secondhandCountLabel.Name = "secondhandCountLabel";
             this.secondhandCountLabel.Size = new System.Drawing.Size(173, 13);
             this.secondhandCountLabel.TabIndex = 9;
@@ -159,7 +159,7 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(738, 507);
+            this.ClientSize = new System.Drawing.Size(731, 507);
             this.Controls.Add(this.acquiredDeleteButton);
             this.Controls.Add(this.secondhandCountLabel);
             this.Controls.Add(this.freeCountLabel);

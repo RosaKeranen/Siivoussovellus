@@ -156,7 +156,7 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(738, 507);
+            this.ClientSize = new System.Drawing.Size(731, 507);
             this.Controls.Add(this.deleteTossedButton);
             this.Controls.Add(this.soldCountLabel);
             this.Controls.Add(this.charityCountLabel);

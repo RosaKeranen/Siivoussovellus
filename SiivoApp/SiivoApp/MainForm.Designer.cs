@@ -207,7 +207,7 @@
             this.tossedTypeGroupBox.Controls.Add(this.charityRadioButton);
             this.tossedTypeGroupBox.Controls.Add(this.soldRadioButton);
             this.tossedTypeGroupBox.Font = new System.Drawing.Font("Segoe UI Semibold", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.tossedTypeGroupBox.Location = new System.Drawing.Point(47, 137);
+            this.tossedTypeGroupBox.Location = new System.Drawing.Point(41, 137);
             this.tossedTypeGroupBox.Name = "tossedTypeGroupBox";
             this.tossedTypeGroupBox.Size = new System.Drawing.Size(146, 90);
             this.tossedTypeGroupBox.TabIndex = 13;
@@ -220,7 +220,7 @@
             this.acquiredTypeGroupBox.Controls.Add(this.secondhandPurchaseRadioButton);
             this.acquiredTypeGroupBox.Controls.Add(this.freeRadioButton);
             this.acquiredTypeGroupBox.Font = new System.Drawing.Font("Segoe UI Semibold", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.acquiredTypeGroupBox.Location = new System.Drawing.Point(211, 137);
+            this.acquiredTypeGroupBox.Location = new System.Drawing.Point(217, 137);
             this.acquiredTypeGroupBox.Name = "acquiredTypeGroupBox";
             this.acquiredTypeGroupBox.Size = new System.Drawing.Size(146, 90);
             this.acquiredTypeGroupBox.TabIndex = 14;
@@ -232,9 +232,9 @@
             this.chooseViewGroupBox.Controls.Add(this.viewTossedListRadioButton);
             this.chooseViewGroupBox.Controls.Add(this.viewButton);
             this.chooseViewGroupBox.Controls.Add(this.viewAcquiredListRadioButton);
-            this.chooseViewGroupBox.Location = new System.Drawing.Point(53, 262);
+            this.chooseViewGroupBox.Location = new System.Drawing.Point(41, 259);
             this.chooseViewGroupBox.Name = "chooseViewGroupBox";
-            this.chooseViewGroupBox.Size = new System.Drawing.Size(300, 112);
+            this.chooseViewGroupBox.Size = new System.Drawing.Size(322, 111);
             this.chooseViewGroupBox.TabIndex = 15;
             this.chooseViewGroupBox.TabStop = false;
             // 
