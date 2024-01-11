@@ -44,31 +44,31 @@
             // thrownAwayListBox
             // 
             this.thrownAwayListBox.FormattingEnabled = true;
-            this.thrownAwayListBox.Location = new System.Drawing.Point(49, 108);
+            this.thrownAwayListBox.Location = new System.Drawing.Point(21, 132);
             this.thrownAwayListBox.Name = "thrownAwayListBox";
-            this.thrownAwayListBox.Size = new System.Drawing.Size(202, 251);
+            this.thrownAwayListBox.Size = new System.Drawing.Size(213, 251);
             this.thrownAwayListBox.TabIndex = 0;
             // 
             // charityListBox
             // 
             this.charityListBox.FormattingEnabled = true;
-            this.charityListBox.Location = new System.Drawing.Point(268, 108);
+            this.charityListBox.Location = new System.Drawing.Point(254, 132);
             this.charityListBox.Name = "charityListBox";
-            this.charityListBox.Size = new System.Drawing.Size(202, 251);
+            this.charityListBox.Size = new System.Drawing.Size(213, 251);
             this.charityListBox.TabIndex = 1;
             // 
             // soldListBox
             // 
             this.soldListBox.FormattingEnabled = true;
-            this.soldListBox.Location = new System.Drawing.Point(485, 108);
+            this.soldListBox.Location = new System.Drawing.Point(492, 132);
             this.soldListBox.Name = "soldListBox";
-            this.soldListBox.Size = new System.Drawing.Size(202, 251);
+            this.soldListBox.Size = new System.Drawing.Size(213, 251);
             this.soldListBox.TabIndex = 2;
             // 
             // thrownAwayLabel
             // 
             this.thrownAwayLabel.AutoSize = true;
-            this.thrownAwayLabel.Location = new System.Drawing.Point(46, 80);
+            this.thrownAwayLabel.Location = new System.Drawing.Point(84, 93);
             this.thrownAwayLabel.Name = "thrownAwayLabel";
             this.thrownAwayLabel.Size = new System.Drawing.Size(76, 13);
             this.thrownAwayLabel.TabIndex = 3;
@@ -77,7 +77,7 @@
             // tossedViewLabel
             // 
             this.tossedViewLabel.AutoSize = true;
-            this.tossedViewLabel.Location = new System.Drawing.Point(324, 35);
+            this.tossedViewLabel.Location = new System.Drawing.Point(323, 31);
             this.tossedViewLabel.Name = "tossedViewLabel";
             this.tossedViewLabel.Size = new System.Drawing.Size(67, 13);
             this.tossedViewLabel.TabIndex = 4;
@@ -86,7 +86,7 @@
             // charityLabel
             // 
             this.charityLabel.AutoSize = true;
-            this.charityLabel.Location = new System.Drawing.Point(265, 80);
+            this.charityLabel.Location = new System.Drawing.Point(323, 93);
             this.charityLabel.Name = "charityLabel";
             this.charityLabel.Size = new System.Drawing.Size(66, 13);
             this.charityLabel.TabIndex = 5;
@@ -95,7 +95,7 @@
             // soldLabel
             // 
             this.soldLabel.AutoSize = true;
-            this.soldLabel.Location = new System.Drawing.Point(485, 79);
+            this.soldLabel.Location = new System.Drawing.Point(571, 93);
             this.soldLabel.Name = "soldLabel";
             this.soldLabel.Size = new System.Drawing.Size(34, 13);
             this.soldLabel.TabIndex = 6;
@@ -104,7 +104,7 @@
             // thrownAwayCountLabel
             // 
             this.thrownAwayCountLabel.AutoSize = true;
-            this.thrownAwayCountLabel.Location = new System.Drawing.Point(46, 373);
+            this.thrownAwayCountLabel.Location = new System.Drawing.Point(18, 396);
             this.thrownAwayCountLabel.Name = "thrownAwayCountLabel";
             this.thrownAwayCountLabel.Size = new System.Drawing.Size(145, 13);
             this.thrownAwayCountLabel.TabIndex = 7;
@@ -113,7 +113,7 @@
             // charityCountLabel
             // 
             this.charityCountLabel.AutoSize = true;
-            this.charityCountLabel.Location = new System.Drawing.Point(268, 373);
+            this.charityCountLabel.Location = new System.Drawing.Point(257, 396);
             this.charityCountLabel.Name = "charityCountLabel";
             this.charityCountLabel.Size = new System.Drawing.Size(132, 13);
             this.charityCountLabel.TabIndex = 8;
@@ -122,7 +122,7 @@
             // soldCountLabel
             // 
             this.soldCountLabel.AutoSize = true;
-            this.soldCountLabel.Location = new System.Drawing.Point(488, 373);
+            this.soldCountLabel.Location = new System.Drawing.Point(489, 396);
             this.soldCountLabel.Name = "soldCountLabel";
             this.soldCountLabel.Size = new System.Drawing.Size(100, 13);
             this.soldCountLabel.TabIndex = 9;
@@ -130,11 +130,11 @@
             // 
             // deleteTossedButton
             // 
-            this.deleteTossedButton.Location = new System.Drawing.Point(672, 385);
+            this.deleteTossedButton.Location = new System.Drawing.Point(614, 438);
             this.deleteTossedButton.Name = "deleteTossedButton";
             this.deleteTossedButton.Size = new System.Drawing.Size(91, 37);
             this.deleteTossedButton.TabIndex = 10;
-            this.deleteTossedButton.Text = "Poista";
+            this.deleteTossedButton.Text = "Poista listalta";
             this.deleteTossedButton.UseVisualStyleBackColor = true;
             this.deleteTossedButton.Click += new System.EventHandler(this.deleteTossedButton_Click);
             // 
@@ -142,7 +142,7 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(794, 478);
+            this.ClientSize = new System.Drawing.Size(738, 507);
             this.Controls.Add(this.deleteTossedButton);
             this.Controls.Add(this.soldCountLabel);
             this.Controls.Add(this.charityCountLabel);

@@ -44,9 +44,9 @@
             // newPurchaseListBox
             // 
             this.newPurchaseListBox.FormattingEnabled = true;
-            this.newPurchaseListBox.Location = new System.Drawing.Point(48, 110);
+            this.newPurchaseListBox.Location = new System.Drawing.Point(39, 110);
             this.newPurchaseListBox.Name = "newPurchaseListBox";
-            this.newPurchaseListBox.Size = new System.Drawing.Size(202, 251);
+            this.newPurchaseListBox.Size = new System.Drawing.Size(213, 251);
             this.newPurchaseListBox.TabIndex = 0;
             // 
             // secondhandListBox
@@ -55,7 +55,7 @@
             this.secondhandListBox.FormattingEnabled = true;
             this.secondhandListBox.Location = new System.Drawing.Point(493, 110);
             this.secondhandListBox.Name = "secondhandListBox";
-            this.secondhandListBox.Size = new System.Drawing.Size(202, 251);
+            this.secondhandListBox.Size = new System.Drawing.Size(213, 251);
             this.secondhandListBox.TabIndex = 1;
             // 
             // freeListBox
@@ -63,13 +63,13 @@
             this.freeListBox.FormattingEnabled = true;
             this.freeListBox.Location = new System.Drawing.Point(271, 110);
             this.freeListBox.Name = "freeListBox";
-            this.freeListBox.Size = new System.Drawing.Size(202, 251);
+            this.freeListBox.Size = new System.Drawing.Size(213, 251);
             this.freeListBox.TabIndex = 2;
             // 
             // acquiredViewLabel
             // 
             this.acquiredViewLabel.AutoSize = true;
-            this.acquiredViewLabel.Location = new System.Drawing.Point(325, 37);
+            this.acquiredViewLabel.Location = new System.Drawing.Point(349, 22);
             this.acquiredViewLabel.Name = "acquiredViewLabel";
             this.acquiredViewLabel.Size = new System.Drawing.Size(72, 13);
             this.acquiredViewLabel.TabIndex = 3;
@@ -132,11 +132,11 @@
             // 
             // acquiredDeleteButton
             // 
-            this.acquiredDeleteButton.Location = new System.Drawing.Point(687, 385);
+            this.acquiredDeleteButton.Location = new System.Drawing.Point(615, 437);
             this.acquiredDeleteButton.Name = "acquiredDeleteButton";
             this.acquiredDeleteButton.Size = new System.Drawing.Size(91, 37);
             this.acquiredDeleteButton.TabIndex = 10;
-            this.acquiredDeleteButton.Text = "Poista";
+            this.acquiredDeleteButton.Text = "Poista listalta";
             this.acquiredDeleteButton.UseVisualStyleBackColor = true;
             this.acquiredDeleteButton.Click += new System.EventHandler(this.acquiredDeleteButton_Click);
             // 
@@ -144,7 +144,7 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(803, 471);
+            this.ClientSize = new System.Drawing.Size(738, 507);
             this.Controls.Add(this.acquiredDeleteButton);
             this.Controls.Add(this.secondhandCountLabel);
             this.Controls.Add(this.freeCountLabel);

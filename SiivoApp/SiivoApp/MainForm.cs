@@ -178,6 +178,7 @@ namespace SiivoApp
          
         }
 
+        //Tallennus oli alkuun tässä Save-funktiossa, mutta se ei toiminut listalta poiston kanssa, joten tämä pitänee hylätä kokonaan?
         private void Save()
         {
             //Tietojen tallennus tiedostoon, jokaiselle listalle on oma tiedosto
