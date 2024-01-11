@@ -38,6 +38,7 @@ namespace SiivoApp
             secondhandListBox.SelectedIndexChanged += ListBox_SelectedIndexChanged;
         }
 
+        //Tämä alla oleva koodi liittyy tilanteeseen, jossa käyttäjä on klikannut listboxissa olevaa asiaa poistaakseen sen, mutta muuttaa mielensä
         //Updating tehtävä on blokata eventit joita seuraa clearSelected hommista
         bool updating = false;
         // Lisää luokkaan muuttuja, joka säilyttää aikaisemmin valitun indeksin

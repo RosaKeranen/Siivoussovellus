@@ -232,7 +232,7 @@
             this.chooseViewGroupBox.Controls.Add(this.viewTossedListRadioButton);
             this.chooseViewGroupBox.Controls.Add(this.viewButton);
             this.chooseViewGroupBox.Controls.Add(this.viewAcquiredListRadioButton);
-            this.chooseViewGroupBox.Location = new System.Drawing.Point(41, 259);
+            this.chooseViewGroupBox.Location = new System.Drawing.Point(41, 260);
             this.chooseViewGroupBox.Name = "chooseViewGroupBox";
             this.chooseViewGroupBox.Size = new System.Drawing.Size(322, 111);
             this.chooseViewGroupBox.TabIndex = 15;
