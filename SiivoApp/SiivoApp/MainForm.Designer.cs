@@ -71,9 +71,10 @@
             // tossedRadioButton
             // 
             this.tossedRadioButton.AutoSize = true;
+            this.tossedRadioButton.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.tossedRadioButton.Location = new System.Drawing.Point(36, 76);
             this.tossedRadioButton.Name = "tossedRadioButton";
-            this.tossedRadioButton.Size = new System.Drawing.Size(60, 17);
+            this.tossedRadioButton.Size = new System.Drawing.Size(68, 21);
             this.tossedRadioButton.TabIndex = 2;
             this.tossedRadioButton.TabStop = true;
             this.tossedRadioButton.Text = "Siivottu";
@@ -83,9 +84,10 @@
             // acquiredRadioButton
             // 
             this.acquiredRadioButton.AutoSize = true;
+            this.acquiredRadioButton.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.acquiredRadioButton.Location = new System.Drawing.Point(162, 76);
             this.acquiredRadioButton.Name = "acquiredRadioButton";
-            this.acquiredRadioButton.Size = new System.Drawing.Size(65, 17);
+            this.acquiredRadioButton.Size = new System.Drawing.Size(73, 21);
             this.acquiredRadioButton.TabIndex = 3;
             this.acquiredRadioButton.TabStop = true;
             this.acquiredRadioButton.Text = "Hankittu";
@@ -95,9 +97,10 @@
             // thrownAwayRadioButton
             // 
             this.thrownAwayRadioButton.AutoSize = true;
+            this.thrownAwayRadioButton.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.thrownAwayRadioButton.Location = new System.Drawing.Point(6, 20);
             this.thrownAwayRadioButton.Name = "thrownAwayRadioButton";
-            this.thrownAwayRadioButton.Size = new System.Drawing.Size(94, 17);
+            this.thrownAwayRadioButton.Size = new System.Drawing.Size(112, 21);
             this.thrownAwayRadioButton.TabIndex = 4;
             this.thrownAwayRadioButton.TabStop = true;
             this.thrownAwayRadioButton.Text = "Heitetty roskiin";
@@ -106,9 +109,10 @@
             // charityRadioButton
             // 
             this.charityRadioButton.AutoSize = true;
+            this.charityRadioButton.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.charityRadioButton.Location = new System.Drawing.Point(6, 44);
             this.charityRadioButton.Name = "charityRadioButton";
-            this.charityRadioButton.Size = new System.Drawing.Size(84, 17);
+            this.charityRadioButton.Size = new System.Drawing.Size(99, 21);
             this.charityRadioButton.TabIndex = 5;
             this.charityRadioButton.TabStop = true;
             this.charityRadioButton.Text = "Annettu pois";
@@ -117,9 +121,10 @@
             // soldRadioButton
             // 
             this.soldRadioButton.AutoSize = true;
+            this.soldRadioButton.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.soldRadioButton.Location = new System.Drawing.Point(6, 66);
             this.soldRadioButton.Name = "soldRadioButton";
-            this.soldRadioButton.Size = new System.Drawing.Size(52, 17);
+            this.soldRadioButton.Size = new System.Drawing.Size(60, 21);
             this.soldRadioButton.TabIndex = 6;
             this.soldRadioButton.TabStop = true;
             this.soldRadioButton.Text = "Myyty";
@@ -128,9 +133,10 @@
             // newPurchaseRadioButton
             // 
             this.newPurchaseRadioButton.AutoSize = true;
+            this.newPurchaseRadioButton.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.newPurchaseRadioButton.Location = new System.Drawing.Point(7, 19);
             this.newPurchaseRadioButton.Name = "newPurchaseRadioButton";
-            this.newPurchaseRadioButton.Size = new System.Drawing.Size(95, 17);
+            this.newPurchaseRadioButton.Size = new System.Drawing.Size(111, 21);
             this.newPurchaseRadioButton.TabIndex = 7;
             this.newPurchaseRadioButton.TabStop = true;
             this.newPurchaseRadioButton.Text = "Ostettu uutena";
@@ -139,9 +145,10 @@
             // freeRadioButton
             // 
             this.freeRadioButton.AutoSize = true;
+            this.freeRadioButton.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.freeRadioButton.Location = new System.Drawing.Point(7, 38);
             this.freeRadioButton.Name = "freeRadioButton";
-            this.freeRadioButton.Size = new System.Drawing.Size(100, 17);
+            this.freeRadioButton.Size = new System.Drawing.Size(117, 21);
             this.freeRadioButton.TabIndex = 8;
             this.freeRadioButton.TabStop = true;
             this.freeRadioButton.Text = "Saatu ilmaiseksi";
@@ -150,9 +157,10 @@
             // secondhandPurchaseRadioButton
             // 
             this.secondhandPurchaseRadioButton.AutoSize = true;
+            this.secondhandPurchaseRadioButton.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.secondhandPurchaseRadioButton.Location = new System.Drawing.Point(7, 61);
             this.secondhandPurchaseRadioButton.Name = "secondhandPurchaseRadioButton";
-            this.secondhandPurchaseRadioButton.Size = new System.Drawing.Size(111, 17);
+            this.secondhandPurchaseRadioButton.Size = new System.Drawing.Size(130, 21);
             this.secondhandPurchaseRadioButton.TabIndex = 9;
             this.secondhandPurchaseRadioButton.TabStop = true;
             this.secondhandPurchaseRadioButton.Text = "Ostettu käytettynä";
@@ -160,6 +168,7 @@
             // 
             // viewButton
             // 
+            this.viewButton.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.viewButton.Location = new System.Drawing.Point(26, 39);
             this.viewButton.Name = "viewButton";
             this.viewButton.Size = new System.Drawing.Size(84, 41);
@@ -195,9 +204,10 @@
             this.tossedTypeGroupBox.Controls.Add(this.thrownAwayRadioButton);
             this.tossedTypeGroupBox.Controls.Add(this.charityRadioButton);
             this.tossedTypeGroupBox.Controls.Add(this.soldRadioButton);
+            this.tossedTypeGroupBox.Font = new System.Drawing.Font("Segoe UI Semibold", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.tossedTypeGroupBox.Location = new System.Drawing.Point(36, 116);
             this.tossedTypeGroupBox.Name = "tossedTypeGroupBox";
-            this.tossedTypeGroupBox.Size = new System.Drawing.Size(112, 90);
+            this.tossedTypeGroupBox.Size = new System.Drawing.Size(146, 90);
             this.tossedTypeGroupBox.TabIndex = 13;
             this.tossedTypeGroupBox.TabStop = false;
             this.tossedTypeGroupBox.Text = "Mihin nakkasit?";
@@ -207,9 +217,10 @@
             this.acquiredTypeGroupBox.Controls.Add(this.newPurchaseRadioButton);
             this.acquiredTypeGroupBox.Controls.Add(this.secondhandPurchaseRadioButton);
             this.acquiredTypeGroupBox.Controls.Add(this.freeRadioButton);
-            this.acquiredTypeGroupBox.Location = new System.Drawing.Point(161, 116);
+            this.acquiredTypeGroupBox.Font = new System.Drawing.Font("Segoe UI Semibold", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.acquiredTypeGroupBox.Location = new System.Drawing.Point(201, 116);
             this.acquiredTypeGroupBox.Name = "acquiredTypeGroupBox";
-            this.acquiredTypeGroupBox.Size = new System.Drawing.Size(129, 90);
+            this.acquiredTypeGroupBox.Size = new System.Drawing.Size(146, 90);
             this.acquiredTypeGroupBox.TabIndex = 14;
             this.acquiredTypeGroupBox.TabStop = false;
             this.acquiredTypeGroupBox.Text = "Miten hankit?";
