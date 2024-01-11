@@ -52,7 +52,7 @@
             // textBox1
             // 
             this.textBox1.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBox1.Location = new System.Drawing.Point(36, 39);
+            this.textBox1.Location = new System.Drawing.Point(23, 38);
             this.textBox1.Name = "textBox1";
             this.textBox1.Size = new System.Drawing.Size(269, 23);
             this.textBox1.TabIndex = 0;
@@ -60,9 +60,9 @@
             // addButton
             // 
             this.addButton.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.addButton.Location = new System.Drawing.Point(323, 33);
+            this.addButton.Location = new System.Drawing.Point(312, 32);
             this.addButton.Name = "addButton";
-            this.addButton.Size = new System.Drawing.Size(82, 31);
+            this.addButton.Size = new System.Drawing.Size(83, 33);
             this.addButton.TabIndex = 1;
             this.addButton.Text = "Lisää listalle";
             this.addButton.UseVisualStyleBackColor = true;
@@ -72,7 +72,7 @@
             // 
             this.tossedRadioButton.AutoSize = true;
             this.tossedRadioButton.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.tossedRadioButton.Location = new System.Drawing.Point(36, 76);
+            this.tossedRadioButton.Location = new System.Drawing.Point(23, 75);
             this.tossedRadioButton.Name = "tossedRadioButton";
             this.tossedRadioButton.Size = new System.Drawing.Size(68, 21);
             this.tossedRadioButton.TabIndex = 2;
@@ -85,7 +85,7 @@
             // 
             this.acquiredRadioButton.AutoSize = true;
             this.acquiredRadioButton.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.acquiredRadioButton.Location = new System.Drawing.Point(162, 76);
+            this.acquiredRadioButton.Location = new System.Drawing.Point(97, 75);
             this.acquiredRadioButton.Name = "acquiredRadioButton";
             this.acquiredRadioButton.Size = new System.Drawing.Size(73, 21);
             this.acquiredRadioButton.TabIndex = 3;
@@ -169,9 +169,9 @@
             // viewButton
             // 
             this.viewButton.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.viewButton.Location = new System.Drawing.Point(26, 39);
+            this.viewButton.Location = new System.Drawing.Point(32, 39);
             this.viewButton.Name = "viewButton";
-            this.viewButton.Size = new System.Drawing.Size(84, 41);
+            this.viewButton.Size = new System.Drawing.Size(91, 37);
             this.viewButton.TabIndex = 10;
             this.viewButton.Text = "Katso listaa";
             this.viewButton.UseVisualStyleBackColor = true;
@@ -180,9 +180,10 @@
             // viewTossedListRadioButton
             // 
             this.viewTossedListRadioButton.AutoSize = true;
+            this.viewTossedListRadioButton.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.viewTossedListRadioButton.Location = new System.Drawing.Point(151, 39);
             this.viewTossedListRadioButton.Name = "viewTossedListRadioButton";
-            this.viewTossedListRadioButton.Size = new System.Drawing.Size(85, 17);
+            this.viewTossedListRadioButton.Size = new System.Drawing.Size(99, 21);
             this.viewTossedListRadioButton.TabIndex = 11;
             this.viewTossedListRadioButton.TabStop = true;
             this.viewTossedListRadioButton.Text = "Siivotut asiat";
@@ -191,9 +192,10 @@
             // viewAcquiredListRadioButton
             // 
             this.viewAcquiredListRadioButton.AutoSize = true;
+            this.viewAcquiredListRadioButton.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.viewAcquiredListRadioButton.Location = new System.Drawing.Point(151, 63);
             this.viewAcquiredListRadioButton.Name = "viewAcquiredListRadioButton";
-            this.viewAcquiredListRadioButton.Size = new System.Drawing.Size(90, 17);
+            this.viewAcquiredListRadioButton.Size = new System.Drawing.Size(104, 21);
             this.viewAcquiredListRadioButton.TabIndex = 12;
             this.viewAcquiredListRadioButton.TabStop = true;
             this.viewAcquiredListRadioButton.Text = "Hankitut asiat";
@@ -205,7 +207,7 @@
             this.tossedTypeGroupBox.Controls.Add(this.charityRadioButton);
             this.tossedTypeGroupBox.Controls.Add(this.soldRadioButton);
             this.tossedTypeGroupBox.Font = new System.Drawing.Font("Segoe UI Semibold", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.tossedTypeGroupBox.Location = new System.Drawing.Point(36, 116);
+            this.tossedTypeGroupBox.Location = new System.Drawing.Point(47, 137);
             this.tossedTypeGroupBox.Name = "tossedTypeGroupBox";
             this.tossedTypeGroupBox.Size = new System.Drawing.Size(146, 90);
             this.tossedTypeGroupBox.TabIndex = 13;
@@ -218,7 +220,7 @@
             this.acquiredTypeGroupBox.Controls.Add(this.secondhandPurchaseRadioButton);
             this.acquiredTypeGroupBox.Controls.Add(this.freeRadioButton);
             this.acquiredTypeGroupBox.Font = new System.Drawing.Font("Segoe UI Semibold", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.acquiredTypeGroupBox.Location = new System.Drawing.Point(201, 116);
+            this.acquiredTypeGroupBox.Location = new System.Drawing.Point(211, 137);
             this.acquiredTypeGroupBox.Name = "acquiredTypeGroupBox";
             this.acquiredTypeGroupBox.Size = new System.Drawing.Size(146, 90);
             this.acquiredTypeGroupBox.TabIndex = 14;
@@ -230,9 +232,9 @@
             this.chooseViewGroupBox.Controls.Add(this.viewTossedListRadioButton);
             this.chooseViewGroupBox.Controls.Add(this.viewButton);
             this.chooseViewGroupBox.Controls.Add(this.viewAcquiredListRadioButton);
-            this.chooseViewGroupBox.Location = new System.Drawing.Point(36, 228);
+            this.chooseViewGroupBox.Location = new System.Drawing.Point(53, 262);
             this.chooseViewGroupBox.Name = "chooseViewGroupBox";
-            this.chooseViewGroupBox.Size = new System.Drawing.Size(281, 112);
+            this.chooseViewGroupBox.Size = new System.Drawing.Size(300, 112);
             this.chooseViewGroupBox.TabIndex = 15;
             this.chooseViewGroupBox.TabStop = false;
             // 
@@ -241,7 +243,7 @@
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.SystemColors.Control;
-            this.ClientSize = new System.Drawing.Size(422, 372);
+            this.ClientSize = new System.Drawing.Size(427, 411);
             this.Controls.Add(this.chooseViewGroupBox);
             this.Controls.Add(this.acquiredTypeGroupBox);
             this.Controls.Add(this.tossedTypeGroupBox);
