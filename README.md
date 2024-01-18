@@ -9,9 +9,11 @@ Tähän alle selitystä sovelluksen toiminnasta ja käyttötarkoituksesta
 
 # Sovelluksen näkymien esittely
 ![Aloitusnäkymä](Screenshots/1_Aloitusnäkymä.png)
+
 Sovelluksen aloitusnäkymä. Käyttäjän on valittava, lisääkö hän asian Siivotut- listalle vai Hankitut-listalle.
 
 ![Aloitusnäkymä, Siivottu-listalle lisäys valittuna](Screenshots/2_Aloitusnäkymä.png)
+
 Sovelluksen aloitusnäkymä, kun käyttäjä on valinnut lisäävänsä asian Siivotut-osastolle. Käyttäjän on vielä valittava radiobuttoneiden avulla sopiva lista kolmesta vaihtoehdosta.
 
 ![Siivottujen asioiden formin näkymä](Screenshots/3_Siivotut_asiat_formi.png)
