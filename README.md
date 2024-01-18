@@ -28,4 +28,6 @@ Tähän alle selitystä sovelluksen toiminnasta ja käyttötarkoituksesta
 ## Koodin pääkohtien esittely
 Tähän vissiin koodinpätkiä?
 ## Jatkokehitysideat
-Kirjoita jatkokehitysideat tähän
+Sovellusta voisi kehittää eteenpäin monella tavalla. Käyttäjä voisi haluta vaikkapa tietää, paljonko ostoksiin on kulunut rahaa, tai paljonko myydyistä tavaroista on tullut rahaa. Sovellukseen voisi lisätä syötteen lisäämisen yhteyteen menoja ja tuloja kirjaavan ominaisuuden. Sovellus voisi myös näyttää käyttäjälle listoille lisättyjä asioita esimerkiksi kuukausi kerrallaan. Tällä hetkellä sovellus näyttää kaikki listoilla olevat asiat yhtenä pötkönä. Sovelluksen ulkonäkö vaatisi myös parantelemista.
+
+
