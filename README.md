@@ -6,6 +6,7 @@ Tähän alle selitystä sovelluksen toiminnasta ja käyttötarkoituksesta
 
 ![Vuokaavio sovelluksen toiminnasta](Screenshots/2_Vuokaavio.JPG)
 *Vuokaavio, joka näyttää sovelluksen toiminnan, kun käyttäjä klikkaa Katso listaa -nappia päänäkymässä.*
+
 ## Sovelluksen näkymien esittely kuvakaappauksilla
 ![Aloitusnäkymä](Screenshots/1_Aloitusnäkymä.png)
 
@@ -13,15 +14,17 @@ Tähän alle selitystä sovelluksen toiminnasta ja käyttötarkoituksesta
 
 ![Aloitusnäkymä, Siivottu-listalle lisäys valittuna](Screenshots/2_Aloitusnäkymä.png)
 
-*Käyttäjä valitsee haluamansa listan.*
+*Käyttäjä valitsee radiobuttoneiden avulla, mille listalle lisää syötteen.*
 
 ![Siivottujen asioiden formin näkymä](Screenshots/3_Siivotut_asiat_formi.png)
 
-*Siivotut asiat -lista avautuu päänäkymän Katso listaa -napista.*
+*Siivotut asiat -formilta pääsee katsomaan poistettujen tavaroiden listoja.*
+*Listoilta voi myös poistaa.*
 
 ![Hankittujen asioiden formin näkymä](Screenshots/4_Hankitut_asiat_formi.png)
 
-*Hankitut asiat -lista avautuu päänäkymän Katso listaa -napista.*
+*Hankitut asiat -formilta pääsee katsomaan hankittujen tavaroiden listoja.*
+*Listoilta voi myös poistaa.*
 ## Koodin pääkohtien esittely
 Tähän vissiin koodinpätkiä?
 ## Jatkokehitysideat
