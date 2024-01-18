@@ -31,6 +31,12 @@ Tähän muutama sana sovelluksen käyttötarkoituksesta.
 # Koodin pääkohtien esittely
 Tähän vissiin koodinpätkiä?
 # Jatkokehitysideat
-Sovellusta voisi kehittää eteenpäin monella tavalla. Sovellukseen voisi tehdä esimerkiksi ominaisuuden, joka kirjaa ylös, paljonko ostoksiin on kulunut rahaa ja paljonko myydyistä tavaroista on tullut rahaa. Kerättyään käyttäjältä nämä tiedot sovellus voisi näyttää kuluneen tai kertyneen rahamäärän listojen tarkastelun yhteydessä. Sovelluksesta voisi tehdä käyttäjälle informatiivisemman ja kiinnostavamman esittämällä listojen sisällön esimerkiksi viikko- tai kuukausinäkymissä. Sovellus voisi myös tehdä erilaisia kuvaajia siivous- ja kulutuskäyttäytymisestä eri kuukausina. Tällä hetkellä sovellus näyttää kaikki listoilla olevat asiat vain yhtenä pötkönä eikä ota käyttäjälle näyttäessä huomioon sitä, kuinka pitkän ajan kuluessa lista on kertynyt. Sovelluksen karu ulkonäkö vaatisi myös parantelemista.
+Sovellusta voisi kehittää eteenpäin monella tavalla. 
+
+Sovellukseen voisi tehdä esimerkiksi ominaisuuden, joka kirjaa ylös, paljonko ostoksiin on kulunut rahaa ja paljonko myydyistä tavaroista on tullut rahaa. Kerättyään käyttäjältä nämä tiedot sovellus voisi näyttää kuluneen tai kertyneen rahamäärän listojen tarkastelun yhteydessä. 
+
+Sovelluksesta voisi tehdä käyttäjälle informatiivisemman ja kiinnostavamman esittämällä listojen sisällön esimerkiksi viikko- tai kuukausinäkymissä. Sovellus voisi myös tehdä erilaisia kuvaajia siivous- ja kulutuskäyttäytymisestä eri kuukausina. Tällä hetkellä sovellus näyttää kaikki listoilla olevat asiat vain yhtenä pötkönä eikä ota käyttäjälle näyttäessä huomioon sitä, kuinka pitkän ajan kuluessa lista on kertynyt. 
+
+Sovelluksen karu ulkonäkö vaatisi myös parantelemista.
 
 
