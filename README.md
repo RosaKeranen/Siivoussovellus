@@ -7,3 +7,4 @@ Laita kuvat ja niiden selitykset tähän
 ## Koodin pääkohtien esittely
 Tähän vissiin koodinpätkiä?
 ## Jatkokehitysideat
+Kirjoita jatkokehitysideat tähän
