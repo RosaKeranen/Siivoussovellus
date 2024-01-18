@@ -80,8 +80,8 @@ namespace SiivoApp
         // Tässä klikataan Lisää listalle -nappia
         private void addButton_Click(object sender, EventArgs e)
         {
-            //Käyttäjää estetään lisäämästä listalle tyhjää, mikäli käyttäjä klikkaa lisää listalle -nappia ja textbox on tyhjä
-            //Messagebox muistuttaa lisäämään tekstiä ennen napin klikkausta
+            // Käyttäjää estetään lisäämästä listalle tyhjää, mikäli käyttäjä klikkaa lisää listalle -nappia ja textbox on tyhjä
+            // Messagebox muistuttaa lisäämään tekstiä ennen napin klikkausta
             if (textBox1.Text.Trim().Length == 0)
             {
                 MessageBox.Show("Kirjoita listalle lisättävä asia.");
@@ -176,18 +176,6 @@ namespace SiivoApp
         private void MainForm_FormClosing(object sender, FormClosingEventArgs e)
         {
          
-        }
-
-        //Tallennus oli alkuun tässä Save-funktiossa, mutta se ei toiminut listalta poiston kanssa, joten tämä pitänee hylätä kokonaan?
-        private void Save()
-        {
-            //Tietojen tallennus tiedostoon, jokaiselle listalle on oma tiedosto
-            fileHelper.WriteToFile(thrownAwayListFileName, thrownAway);
-            fileHelper.WriteToFile(charityListFileName, charity);
-            fileHelper.WriteToFile(soldListFileName, sold);
-            fileHelper.WriteToFile(newPurchaseListFileName, newPurchase);
-            fileHelper.WriteToFile(freeListFileName, free);
-            fileHelper.WriteToFile(secondhandListFileName, secondhand);
         }
     }
 }

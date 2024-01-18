@@ -15,8 +15,6 @@ namespace SiivoApp
 {
     public partial class AcquiredForm : Form
     {
-
-
         private FileHelper fileHelper = new FileHelper();
 
         private const string newPurchaseListFileName = "newPurchase.json";
@@ -79,23 +77,7 @@ namespace SiivoApp
 
         private void AcquiredForm_Load(object sender, EventArgs e)
         {
-            //newPurchaseListBox.Items.AddRange(newPurchase.ToArray());
-            //freeListBox.Items.AddRange(free.ToArray());
-            //secondhandListBox.Items.AddRange(secondhand.ToArray());
-
             UpdateLabelCount();
-        }
-
-        public void UpdateLabelCount()
-        {
-            newPurchaseCountLabel.Text = $"Uutena ostettuja yhteensä: {newPurchaseListBox.Items.Count} kpl";
-            freeCountLabel.Text = $"Ilmaiseksi saatuja yhteensä: {freeListBox.Items.Count} kpl";
-            secondhandCountLabel.Text = $"Käytettynä ostettuja yhteensä: {secondhandListBox.Items.Count} kpl";
-        }
-
-        private void newPurchaseCountLabel_Click(object sender, EventArgs e)
-        {
-
         }
 
         //Poisto-nappia klikkaamalla käyttäjä voi poistaa yhden asian kerrallaan haluamaltaan listalta.
@@ -150,6 +132,12 @@ namespace SiivoApp
                 UpdateLabelCount();
             }
 
+        }
+        public void UpdateLabelCount()
+        {
+            newPurchaseCountLabel.Text = $"Uutena ostettuja yhteensä: {newPurchaseListBox.Items.Count} kpl";
+            freeCountLabel.Text = $"Ilmaiseksi saatuja yhteensä: {freeListBox.Items.Count} kpl";
+            secondhandCountLabel.Text = $"Käytettynä ostettuja yhteensä: {secondhandListBox.Items.Count} kpl";
         }
     }
 }

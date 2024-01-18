@@ -6,6 +6,9 @@ using System.Threading.Tasks;
 
 namespace SiivoApp.DTO
 {
+    // DTO tarkoittaa tässä Data Transfer Object
+    // Serializable tarkoittaa tässä että tämän luokan pystyy sarjoittamaan
+    // ItemListRow on luokka, johon lisätään listarivin tiedot
     [Serializable]
     internal class ItemListRow
     {

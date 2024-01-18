@@ -29,6 +29,7 @@ namespace SiivoApp
             soldListBox.SelectedIndexChanged += ListBox_SelectedIndexChanged;
         }
 
+        //Tämä alla oleva koodi liittyy tilanteeseen, jossa käyttäjä on klikannut listboxissa olevaa asiaa poistaakseen sen, mutta muuttaa mielensä
         //Updating tehtävä on blokata eventit joita seuraa clearSelected hommista
         bool updating = false;
         // Lisää luokkaan muuttuja, joka säilyttää aikaisemmin valitun indeksin
@@ -69,18 +70,7 @@ namespace SiivoApp
 
         private void TossedForm_Load(object sender, EventArgs e)
         {
-            //thrownAwayListBox.Items.AddRange(thrownAway.ToArray());
-            //charityListBox.Items.AddRange(charity.ToArray());
-            //soldListBox.Items.AddRange(sold.ToArray());
-
             UpdateLabelCount();
-        }
-
-        public void UpdateLabelCount()
-        {
-            thrownAwayCountLabel.Text = $"Pois heitettyjä yhteensä: {thrownAwayListBox.Items.Count} kpl";
-            charityCountLabel.Text = $"Pois annettuja yhteensä: {charityListBox.Items.Count} kpl";
-            soldCountLabel.Text = $"Myytyjä yhteensä: {soldListBox.Items.Count} kpl";
         }
 
         //Poisto-nappia klikkaamalla käyttäjä voi poistaa yhden asian kerrallaan haluamaltaan listalta.
@@ -135,6 +125,12 @@ namespace SiivoApp
                 UpdateLabelCount();
             }
 
+        }
+        public void UpdateLabelCount()
+        {
+            thrownAwayCountLabel.Text = $"Pois heitettyjä yhteensä: {thrownAwayListBox.Items.Count} kpl";
+            charityCountLabel.Text = $"Pois annettuja yhteensä: {charityListBox.Items.Count} kpl";
+            soldCountLabel.Text = $"Myytyjä yhteensä: {soldListBox.Items.Count} kpl";
         }
     }
 }

@@ -122,7 +122,6 @@
             this.newPurchaseCountLabel.Size = new System.Drawing.Size(158, 13);
             this.newPurchaseCountLabel.TabIndex = 7;
             this.newPurchaseCountLabel.Text = "Uutena ostettujen lukumäärä";
-            this.newPurchaseCountLabel.Click += new System.EventHandler(this.newPurchaseCountLabel_Click);
             // 
             // freeCountLabel
             // 
