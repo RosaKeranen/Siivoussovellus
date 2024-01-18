@@ -1,13 +1,13 @@
-## Selvitys sovelluksen toiminnasta ja käyttötarkoituksesta
+# Sovelluksen toiminta ja käyttötarkoitus
 Tähän alle selitystä sovelluksen toiminnasta ja käyttötarkoituksesta
-## Vuokaaviot sovelluksen toiminnasta
+# Vuokaaviot
 ![Vuokaavio sovelluksen toiminnasta](Screenshots/1_Vuokaavio.JPG)
 *Vuokaavio, joka näyttää sovelluksen toiminnan, kun käyttäjä lisää syötteen valitsemalleen listalle.*
 
 ![Vuokaavio sovelluksen toiminnasta](Screenshots/2_Vuokaavio.JPG)
 *Vuokaavio, joka näyttää sovelluksen toiminnan, kun käyttäjä klikkaa Katso listaa -nappia päänäkymässä.*
 
-## Sovelluksen näkymien esittely kuvakaappauksilla
+# Sovelluksen näkymien esittely
 ![Aloitusnäkymä](Screenshots/1_Aloitusnäkymä.png)
 
 *Sovelluksen aloitusnäkymä.*
@@ -25,9 +25,9 @@ Tähän alle selitystä sovelluksen toiminnasta ja käyttötarkoituksesta
 
 *Hankitut asiat -formilta pääsee katsomaan hankittujen tavaroiden listoja.*
 *Listoilta voi myös poistaa.*
-## Koodin pääkohtien esittely
+# Koodin pääkohtien esittely
 Tähän vissiin koodinpätkiä?
-## Jatkokehitysideat
+# Jatkokehitysideat
 Sovellusta voisi kehittää eteenpäin monella tavalla. Käyttäjä voisi haluta vaikkapa tietää, paljonko ostoksiin on kulunut rahaa, tai paljonko myydyistä tavaroista on tullut rahaa. Sovellukseen voisi lisätä syötteen lisäämisen yhteyteen menoja ja tuloja kirjaavan ominaisuuden. Sovellus voisi myös näyttää käyttäjälle listoille lisättyjä asioita esimerkiksi kuukausi kerrallaan. Tällä hetkellä sovellus näyttää kaikki listoilla olevat asiat yhtenä pötkönä. Sovelluksen ulkonäkö vaatisi myös parantelemista.
 
 
