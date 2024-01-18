@@ -1,8 +1,6 @@
-## Tämä on sovellus
+## Selvitys sovelluksen toiminnasta ja käyttötarkoituksesta
 Tähän alle selitystä sovelluksen toiminnasta ja käyttötarkoituksesta
-
-Vuokaaviot tähän
-
+## Vuokaaviot sovelluksen toiminnasta
 ![Vuokaavio sovelluksen toiminnasta](Screenshots/1_Vuokaavio.JPG)
 *Vuokaavio, joka näyttää sovelluksen toiminnan, kun käyttäjä lisää syötteen valitsemalleen listalle.*
 
