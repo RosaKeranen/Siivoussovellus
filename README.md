@@ -15,24 +15,27 @@ Sovelluksessani on kolme näkymää: aloitusnäkymä, jossa käyttäjä voi syö
 # Sovelluksen näkymien esittely
 ![Aloitusnäkymä](Screenshots/1_Aloitusnäkymä.png)
 
-*Sovelluksen aloitusnäkymä.*
+Sovelluksen aloitusnäkymä.
 
 
 ![Aloitusnäkymä, Siivottu-listalle lisäys valittuna](Screenshots/2_Aloitusnäkymä.png)
 
-*Käyttäjä valitsee radiobuttoneiden avulla listan, jolle haluaa lisätä jotakin.*
+Käyttäjä valitsee radiobuttoneiden avulla listan, jolle haluaa lisätä jotakin.
 
 
 ![Siivottujen asioiden formin näkymä](Screenshots/3_Siivotut_asiat_formi.png)
 
-*Siivotut asiat -formilta pääsee katsomaan poistettujen tavaroiden listoja.*
-*Listoilta voi myös poistaa.*
+Siivotut asiat -formilta pääsee katsomaan poistettujen tavaroiden listoja. 
+
+Listalta voi myös valita asian klikkaamalla sitä ja poistaa sen.
 
 
 ![Hankittujen asioiden formin näkymä](Screenshots/4_Hankitut_asiat_formi.png)
 
-*Hankitut asiat -formilta pääsee katsomaan hankittujen tavaroiden listoja.*
-*Listoilta voi myös poistaa.*
+Hankitut asiat -formilta pääsee katsomaan hankittujen tavaroiden listoja. 
+
+Listalta voi myös valita asian klikkaamalla sitä ja poistaa sen.
+
 # Koodin pääkohtien esittely
 Tähän vissiin koodinpätkiä?
 # Jatkokehitysideat
