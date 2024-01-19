@@ -1,5 +1,10 @@
 # Sovelluksen toiminta ja käyttötarkoitus
-Tähän muutama sana sovelluksen käyttötarkoituksesta.
+Tervetuloa tutustumaan Siivo-sovellukseeni! 
+
+Sovellukseni on tarkoitettu auttamaan arjen tavarakaaoksen hallinnassa. Sovellukseni kannustaa käyttäjää hankkiutumaan eroon vanhoista tavaroista, joita hän ei enää tarvitse, ja samalla tekemään uusia hankintoja harkitsevaisemmin. 
+
+Sovelluksessani on kolme näkymää: aloitusnäkymä, jossa käyttäjä voi syöttää sovellukseen tietoa, sekä kaksi tarkastelunäkymää, joissa käyttäjä voi tutkia ohjelmaan kirjaamiaan asioita. Sovellukseni luo käyttäjän antamien syötteiden ja valintojen perusteella listoja, joiden avulla käyttäjä voi tarkastella omaa siivous- ja kulutuskäyttäytymistään. Sovelluksesta voi esimerkiksi katsoa, mitä asioita on ostanut, ja tuleeko tavaraa hankittua enemmän uutena vai käytettynä. Omaa toimintaansa voi tarkastella myös sen suhteen, minne pois heitetyt tavarat päätyvät: onko ne heitetty roskiin, annettu pois vai myyty eteenpäin. 
+
 # Vuokaaviot
 ![Vuokaavio sovelluksen toiminnasta](Screenshots/1_Vuokaavio.JPG)
 *Vuokaavio, joka näyttää sovelluksen toiminnan, kun käyttäjä lisää syötteen valitsemalleen listalle.*
