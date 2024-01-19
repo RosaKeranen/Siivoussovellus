@@ -7,10 +7,12 @@ Sovelluksessani on kolme näkymää: aloitusnäkymä, jossa käyttäjä voi syö
 
 # Vuokaaviot
 ![Vuokaavio sovelluksen toiminnasta](Screenshots/1_Vuokaavio.JPG)
-*Vuokaavio, joka näyttää sovelluksen toiminnan, kun käyttäjä lisää syötteen valitsemalleen listalle.*
+
+Vuokaavio, joka näyttää sovelluksen toiminnan, kun käyttäjä lisää syötteen valitsemalleen listalle.
 
 ![Vuokaavio sovelluksen toiminnasta](Screenshots/2_Vuokaavio.JPG)
-*Vuokaavio, joka näyttää sovelluksen toiminnan, kun käyttäjä klikkaa Katso listaa -nappia päänäkymässä.*
+
+Vuokaavio, joka näyttää sovelluksen toiminnan, kun käyttäjä klikkaa Katso listaa -nappia päänäkymässä.
 
 # Sovelluksen näkymien esittely
 ![Aloitusnäkymä](Screenshots/1_Aloitusnäkymä.png)
