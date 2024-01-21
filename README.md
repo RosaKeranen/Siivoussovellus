@@ -59,7 +59,6 @@ ItemListRow on luokka, johon lisätään listarivin tiedot:
             return Text;
         }
     }
-}
 
 ```
 Sitten kirjoitus
@@ -76,7 +75,6 @@ Sitten kirjoitus
                 // Tässä kohdassa ItemListRow serialisoidaan json-stringiksi ja kirjoitetaan tiedostoon.
                 var serializer = new JsonSerializer();
                 serializer.Serialize(writer, itemListRows);
-
             }
         }
 ```
@@ -84,33 +82,32 @@ Sitten kirjoitus
 Sitten lukeminen
 
 ``` 
-
- public List<ItemListRow> ReadFromFile(string filename)
- {
-     List<ItemListRow> thingsList = new List<ItemListRow>();
+   public List<ItemListRow> ReadFromFile(string filename)
+   {
+          List<ItemListRow> thingsList = new List<ItemListRow>();
      
-     // Tarkistetaan, löytyykö tiedosto. Jos ei löydy, palautetaan tyhjä lista.
-     if (File.Exists(filename) == false)
-     {
+         // Tarkistetaan, löytyykö tiedosto. Jos ei löydy, palautetaan tyhjä lista.
+            if (File.Exists(filename) == false)
+              {
+                 return thingsList;
+              }
+
+         // Tässä aloitetaan tiedoston luku avaamalla filestream tiedostoon.
+         using (var stream = File.OpenRead(filename)) 
+         { 
+            var reader = new StreamReader(stream);
+            var jReader = new JsonTextReader(reader);
+
+            // Tässä deserialisoidaan tiedostosta luettu json-stringi listaksi.
+            var serializer = new JsonSerializer();
+            thingsList = serializer.Deserialize<List<ItemListRow>>(jReader);
+         }
+
          return thingsList;
-     }
-
-     // Tässä aloitetaan tiedoston luku avaamalla filestream tiedostoon.
-     using (var stream = File.OpenRead(filename)) 
-     { 
-         var reader = new StreamReader(stream);
-         var jReader = new JsonTextReader(reader);
-
-         // Tässä deserialisoidaan tiedostosta luettu json-stringi listaksi.
-         var serializer = new JsonSerializer();
-         thingsList = serializer.Deserialize<List<ItemListRow>>(jReader);
-     }
-
-     return thingsList;
- }
+    }
  
 ``` 
-Lisää-napin klikkaus (vain yhdelle listalle lisäys esitelty tässä)
+Lisää listalle -napin klikkaus (vain yhdelle listalle lisäys esitelty tässä):
 
 ```
   private void addButton_Click(object sender, EventArgs e)
@@ -126,10 +123,9 @@ Lisää-napin klikkaus (vain yhdelle listalle lisäys esitelty tässä)
             }
 ```
 
-Poista listalta -napin klikkaus (vain yhdeltä listalta poistaminen esitelty tässä)
+Poista listalta -napin klikkaus (vain yhdeltä listalta poistaminen esitelty tässä):
 
 ```
-
  private void deleteTossedButton_Click(object sender, EventArgs e)
  {
      int thrownAwaySelectedIndex = thrownAwayListBox.SelectedIndex;
