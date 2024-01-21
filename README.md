@@ -62,6 +62,109 @@ ItemListRow on luokka, johon lisätään listarivin tiedot:
 }
 
 ```
+Sitten kirjoitus
+
+```
+        public void WriteToFile(string filename, List<ItemListRow> itemListRows) 
+        {
+            // Tässä avataan filestream tiedostoon, johon lista kirjoitetaan.
+            using (var stream = new FileStream(filename, FileMode.Create))
+            {
+                var writer = new StreamWriter(stream);
+                writer.AutoFlush = true;
+
+                // Tässä kohdassa ItemListRow serialisoidaan json-stringiksi ja kirjoitetaan tiedostoon.
+                var serializer = new JsonSerializer();
+                serializer.Serialize(writer, itemListRows);
+
+            }
+        }
+```
+
+Sitten lukeminen
+
+``` 
+
+ public List<ItemListRow> ReadFromFile(string filename)
+ {
+     List<ItemListRow> thingsList = new List<ItemListRow>();
+     
+     // Tarkistetaan, löytyykö tiedosto. Jos ei löydy, palautetaan tyhjä lista.
+     if (File.Exists(filename) == false)
+     {
+         return thingsList;
+     }
+
+     // Tässä aloitetaan tiedoston luku avaamalla filestream tiedostoon.
+     using (var stream = File.OpenRead(filename)) 
+     { 
+         var reader = new StreamReader(stream);
+         var jReader = new JsonTextReader(reader);
+
+         // Tässä deserialisoidaan tiedostosta luettu json-stringi listaksi.
+         var serializer = new JsonSerializer();
+         thingsList = serializer.Deserialize<List<ItemListRow>>(jReader);
+     }
+
+     return thingsList;
+ }
+ 
+``` 
+Lisää-napin klikkaus (vain yhdelle listalle lisäys esitelty tässä)
+
+```
+  private void addButton_Click(object sender, EventArgs e)
+  ...
+              if (thrownAwayRadioButton.Checked)
+            {
+                // Tässä asia lisätään Heitetty pois -listalle
+                thrownAway = fileHelper.ReadFromFile(thrownAwayListFileName);
+                thrownAway.Add(new ItemListRow(textBox1.Text));
+                fileHelper.WriteToFile(thrownAwayListFileName, thrownAway);
+                MessageBox.Show("Lisäsit asian Heitetty pois -listalle!");
+                textBox1.Clear();
+            }
+```
+
+Poista listalta -napin klikkaus (vain yhdeltä listalta poistaminen esitelty tässä)
+
+```
+
+ private void deleteTossedButton_Click(object sender, EventArgs e)
+ {
+     int thrownAwaySelectedIndex = thrownAwayListBox.SelectedIndex;
+     int charitySelectedIndex = charityListBox.SelectedIndex;
+     int soldSelectedIndex = soldListBox.SelectedIndex;
+
+     if (thrownAwaySelectedIndex > -1)
+     {
+         //Poistaa thrownAway-boxin valitusta indeksistä
+         thrownAwayListBox.Items.RemoveAt(thrownAwaySelectedIndex);
+         //Muuttaa listBoxista tulevan ObjectCollectionin list-muotoon
+         List<ItemListRow> thrownAway = new List<ItemListRow>();
+         ItemListRow[] array = new ItemListRow[thrownAwayListBox.Items.Count];
+         thrownAwayListBox.Items.CopyTo(array, 0);
+         thrownAway.AddRange(array);
+         //päivittää tiedoston
+         fileHelper.WriteToFile(thrownAwayListFileName, thrownAway);
+         //päivitä laskuri
+         UpdateLabelCount();
+     }
+	 ...
+  }
+  
+``` 
+
+Listojen alla olevien laskurien päivittämien
+
+``` 
+        public void UpdateLabelCount()
+        {
+            thrownAwayCountLabel.Text = $"Pois heitettyjä yhteensä: {thrownAwayListBox.Items.Count} kpl";
+            charityCountLabel.Text = $"Pois annettuja yhteensä: {charityListBox.Items.Count} kpl";
+            soldCountLabel.Text = $"Myytyjä yhteensä: {soldListBox.Items.Count} kpl";
+        }
+``` 
 # Jatkokehitysideat
 Sovellusta voisi kehittää eteenpäin monella tavalla. 
 
