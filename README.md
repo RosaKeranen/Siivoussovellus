@@ -39,7 +39,29 @@ Hankitut asiat -formilta pääsee katsomaan hankittujen tavaroiden listoja.
 Listalta voi myös valita asian klikkaamalla sitä ja poistaa sen.
 
 # Koodin pääkohtien esittely
-Tähän vissiin koodinpätkiä?
+ItemListRow on luokka, johon lisätään listarivin tiedot:
+
+```
+    internal class ItemListRow
+    {
+        public string Text { get; set; }
+        public DateTime Timestamp { get; set; }
+
+        public ItemListRow() { }
+
+        public ItemListRow(string Text) {
+            this.Text = Text;
+            Timestamp = DateTime.Now;
+        }
+
+        public override string ToString()
+        {
+            return Text;
+        }
+    }
+}
+
+```
 # Jatkokehitysideat
 Sovellusta voisi kehittää eteenpäin monella tavalla. 
 
