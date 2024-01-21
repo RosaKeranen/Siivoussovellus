@@ -61,7 +61,7 @@ ItemListRow on luokka, johon lisätään listarivin tiedot:
     }
 
 ```
-Sitten kirjoitus
+Listalle tallentaminen:
 
 ```
    public void WriteToFile(string filename, List<ItemListRow> itemListRows) 
@@ -79,7 +79,7 @@ Sitten kirjoitus
    }
 ```
 
-Sitten lukeminen
+Listalta lukeminen:
 
 ``` 
    public List<ItemListRow> ReadFromFile(string filename)
@@ -153,8 +153,8 @@ Poista listalta -napin klikkaus (vain yhdeltä listalta poistaminen esitelty tä
 
 Listojen alla olevien laskurien päivittämien:
 
-``` 
-   public void UpdateLabelCount()
+```
+public void UpdateLabelCount()
    {
       thrownAwayCountLabel.Text = $"Pois heitettyjä yhteensä: {thrownAwayListBox.Items.Count} kpl";
       charityCountLabel.Text = $"Pois annettuja yhteensä: {charityListBox.Items.Count} kpl";
