@@ -64,19 +64,19 @@ ItemListRow on luokka, johon lisätään listarivin tiedot:
 Sitten kirjoitus
 
 ```
-        public void WriteToFile(string filename, List<ItemListRow> itemListRows) 
-        {
-            // Tässä avataan filestream tiedostoon, johon lista kirjoitetaan.
-            using (var stream = new FileStream(filename, FileMode.Create))
-            {
-                var writer = new StreamWriter(stream);
-                writer.AutoFlush = true;
+   public void WriteToFile(string filename, List<ItemListRow> itemListRows) 
+   {
+      // Tässä avataan filestream tiedostoon, johon lista kirjoitetaan.
+      using (var stream = new FileStream(filename, FileMode.Create))
+      {
+      var writer = new StreamWriter(stream);
+      writer.AutoFlush = true;
 
-                // Tässä kohdassa ItemListRow serialisoidaan json-stringiksi ja kirjoitetaan tiedostoon.
-                var serializer = new JsonSerializer();
-                serializer.Serialize(writer, itemListRows);
-            }
-        }
+      // Tässä kohdassa ItemListRow serialisoidaan json-stringiksi ja kirjoitetaan tiedostoon.
+      var serializer = new JsonSerializer();
+      serializer.Serialize(writer, itemListRows);
+      }
+   }
 ```
 
 Sitten lukeminen
