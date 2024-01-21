@@ -151,15 +151,15 @@ Poista listalta -napin klikkaus (vain yhdeltä listalta poistaminen esitelty tä
   
 ``` 
 
-Listojen alla olevien laskurien päivittämien
+Listojen alla olevien laskurien päivittämien:
 
 ``` 
-        public void UpdateLabelCount()
-        {
-            thrownAwayCountLabel.Text = $"Pois heitettyjä yhteensä: {thrownAwayListBox.Items.Count} kpl";
-            charityCountLabel.Text = $"Pois annettuja yhteensä: {charityListBox.Items.Count} kpl";
-            soldCountLabel.Text = $"Myytyjä yhteensä: {soldListBox.Items.Count} kpl";
-        }
+   public void UpdateLabelCount()
+   {
+      thrownAwayCountLabel.Text = $"Pois heitettyjä yhteensä: {thrownAwayListBox.Items.Count} kpl";
+      charityCountLabel.Text = $"Pois annettuja yhteensä: {charityListBox.Items.Count} kpl";
+      soldCountLabel.Text = $"Myytyjä yhteensä: {soldListBox.Items.Count} kpl";
+   }
 ``` 
 # Jatkokehitysideat
 Sovellusta voisi kehittää eteenpäin monella tavalla. 
